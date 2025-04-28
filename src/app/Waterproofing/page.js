@@ -1,4 +1,5 @@
 import React from 'react'
+import { Table } from 'react-bootstrap'
 
 function Page() {
   return (
@@ -158,6 +159,35 @@ function Page() {
           </div>
         </div>
       </div>
+      <section className="my-5">
+        <h2>Rate Ranges</h2>
+        <Table striped bordered hover className="my-3">
+          <thead>
+            <tr>
+              <th>Service Type</th>
+              <th>Price Range (INR/sq.ft.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Acrylic Cementitious Solutions</td>
+              <td>₹45 - ₹85 per sq.ft.</td>
+            </tr>
+            <tr>
+              <td>Polyurethane Solutions</td>
+              <td>₹55 - ₹110 per sq.ft.</td>
+            </tr>
+            <tr>
+              <td>Elastomeric & Food Grade Coating Services</td>
+              <td>₹65 - ₹125 per sq.ft.</td>
+            </tr>
+            <tr>
+              <td>Grouting Services</td>
+              <td>₹35 - ₹75 per sq.ft.</td>
+            </tr>
+          </tbody>
+        </Table>
+      </section>
     </div>
   )
 }
