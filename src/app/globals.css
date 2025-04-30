@@ -90,7 +90,7 @@ body {
 }
 
 .navbg {
-  background-color: #eb7fdf;
+  background-color: #6071ba;
   padding: 10px;
 }
 
@@ -111,7 +111,8 @@ body {
 }
 
 .navlink:hover {
-  background-color: #f3631a;
+  /* background-color: #f3631a; */
+  color: #aeb8e3;
   border-radius: 10px;
   text-transform: uppercase;
 }

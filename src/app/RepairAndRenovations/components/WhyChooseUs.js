@@ -42,47 +42,41 @@ function WhyChooseUs() {
   ];
 
   return (
-    <div className='container'>
-      <h1 className='text-center my-4'>
-        Why Choose Us?
-      </h1>
+    <div>
+      <h1 className='text-center my-4'>Why Choose Us?</h1>
 
-      <div className='col-12 row d-flex justify-content-between'>
+      <div className='col-md-12 row mx-0 d-flex justify-content-around'>
         {features.map((feature) => (
-          <div className='col-2' key={feature.id}>
+          <div className='col-4 col-md-2 my-2 my-md-0' key={feature.id}>
             <Box
               sx={{
+                display: 'flex',
                 alignItems: 'center',
                 gap: 0.5,
                 bgcolor: 'white',
                 p: 1,
                 borderRadius: 2,
                 boxShadow: 1,
-                height: '100%',
                 '&:hover': {
                   boxShadow: 3
                 }
               }}
             >
-              <div className='text-center'>
-                <Avatar
-                  sx={{
-                    width: 40,
-                    height: 40,
-                    bgcolor: 'primary.light',
-                    color: 'primary.main',
-                    marginX: 'auto',
-                  }}
-                >
-                  {feature.icon}
-                </Avatar>
-                <h5>
-                  {feature.title}
-                </h5>
-                <div>
-                  {feature.description}
-                </div>
-              </div>
+              <Avatar
+                sx={{
+                  width: 40,
+                  height: 40,
+                  bgcolor: 'primary.light',
+                  color: 'primary.main',
+                  marginX: 'auto',
+                }}
+              >
+                {feature.icon}
+              </Avatar>
+              <Box>
+                <h5 className='font14'>{feature.title}</h5>
+                <div>{feature.description}</div>
+              </Box>
             </Box>
           </div>
         ))}

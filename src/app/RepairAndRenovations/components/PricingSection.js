@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Table } from 'react-bootstrap';
 
 function PricingSection() {
   const pricingData = [
@@ -18,39 +18,29 @@ function PricingSection() {
   ];
 
   return (
-    // <Box id="pricing" sx={{ py: 8, bgcolor: 'background.paper' }}>
-      <div className='container text-center'>
-        <h1>Pricing</h1>
-        <div className='mb-5'>
-          Transparent and competitive pricing for all our services
-        </div>
-
-        <TableContainer component={Paper} elevation={3}>
-          <Table>
-            <TableHead>
-              <TableRow sx={{ bgcolor: 'primary.main' }}>
-                <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Service Type</TableCell>
-                <TableCell align="right" sx={{ color: 'white', fontWeight: 'bold' }}>Price Range (INR/sq.ft.)</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {pricingData.map((row, index) => (
-                <tr key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }} >
-                  <TableCell component="th" scope="row">
-                    {row.service}
-                  </TableCell>
-                  <TableCell align="right">{row.price}</TableCell>
-                </tr>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-
-        <div className='mt-4' style={{ fontSize: '0.9rem', color: '#555' }}>
-          <i>* Final pricing may vary based on specific project requirements and site conditions.</i>
-        </div>
+    <div className='text-center'>
+      <h1>Pricing</h1>
+      <div className='mb-4'>Transparent and competitive pricing for all our services</div>
+      <Table striped bordered hover responsive>
+        <thead className="">
+          <tr className='my-5'>
+            <th className='text-left'>Service Type</th>
+            <th>Price Range (INR/sq.ft.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pricingData.map((row, index) => (
+            <tr key={index}>
+              <td>{row.service}</td>
+              <td>{row.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+      <div className='mt-2' style={{ fontSize: '0.9rem', color: '#555' }}>
+        <i>* Final pricing may vary based on specific project requirements and site conditions.</i>
       </div>
-    // </Box>
+    </div>
   );
 };
 

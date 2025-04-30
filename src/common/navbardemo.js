@@ -9,10 +9,10 @@ function NavbarDemo() {
   return (
     <Navbar expand="lg" className="nav navbg" sticky='top'>
       <Container>
-        <NavbarBrand href="#">
+        <NavbarBrand href="/">
           <div className='d-flex'>
             <span style={{ borderRadius: '70%', overflow: 'hidden' }} className='my-auto mx-1'>
-              <Image src={"/Images/BHF_logo.jpg"} alt='' className='' width={70} height={70} />
+              <Image src={"/Images/BHF_logo.jpg"} alt='' className='' width={50} height={50} />
             </span>
             <span className='my-auto mx-1'>BuildHomesFine</span>
           </div>
