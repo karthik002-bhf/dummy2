@@ -1,26 +1,13 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
-function PricingSection() {
-  const pricingData = [
-    {
-      service: "Conceptual and RAL Selection Support",
-      price: "₹2 – ₹5 per sq.ft.",
-    },
-    {
-      service: "Internal Painting",
-      price: "₹12 – ₹25 per sq.ft.",
-    },
-    {
-      service: "External Painting",
-      price: "₹15 – ₹30 per sq.ft.",
-    },
-  ];
+function PricingSection({ pricingData }) {
 
   return (
     <div className='text-center'>
       <h1>Pricing</h1>
       <div className='mb-4'>Transparent and competitive pricing for all our services</div>
+
       <Table striped bordered hover responsive>
         <thead className="">
           <tr className='my-5'>
@@ -29,7 +16,7 @@ function PricingSection() {
           </tr>
         </thead>
         <tbody>
-          {pricingData.map((row, index) => (
+          {pricingData?.map((row, index) => (
             <tr key={index}>
               <td>{row.service}</td>
               <td>{row.price}</td>

@@ -12,7 +12,7 @@ function ContactSection() {
   const handleSubmit = async (e) => {
     console.log('Form submitted', e);
     e.preventDefault();
-    // setLoading(true);
+    setLoading(true);
 
     const formData = {
       name: e.target.name.value.trim(),
@@ -67,7 +67,7 @@ function ContactSection() {
   };
 
   return (
-    <Box id="contact" sx={{ py: 8, bgcolor: 'background.paper' }}>
+    <Box id="contact" sx={{ py: 4, bgcolor: 'background.paper' }}>
       <div className='container'>
         <h1 className='text-center'>
           Contact Us

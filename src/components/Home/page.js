@@ -1,10 +1,11 @@
 import React from 'react'
 import BgImageTag from '../BgImageTag'
+import Image from 'next/image'
 
 function HomePage() {
     return (
         <div className=''>
-            <div className='' style={{ height: '50vh', width: '100vw', position: 'relative' }}>
+            <div className='' style={{ height: '70vh', width: '100%', position: 'relative', zIndex: 0, overflow: 'hidden' }}>
                 <div className='' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
                     <div className='text-white text-center font50 bold'>Building Your Future</div>
                     <div className='text-center text-white font18'>We deliver high-quality construction services with integrity and professionalism.</div>
@@ -20,37 +21,61 @@ function HomePage() {
                 </div>
                 <div className='text-center py-5 bg-light'>
                     <h1>Our Services</h1>
-                    <div className='d-flex justify-content-between'>
-                        <div className='col-md-3 bg-white p-3 m-2 shadow-md rounded text-center'>
-                            <h2>Residential</h2>
-                            <p>We build custom homes that reflect your style and needs.</p>
+                    <div className='col-md-12 row mx-0 d-flex justify-content-between'>
+                        <div className='col-md-4 bg-white p-1'>
+                            <div className='m-1 shadow-md rounded text-center'>
+                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
+                                    <Image src={"/Images/Home/Residential_homes.jpeg"} alt='Residential_homes' layout='fill' className='img-fluid ' />
+                                </div>
+                                <h2>Residential</h2>
+                                <p>We build custom homes that reflect your style and needs.</p>
+                            </div>
                         </div>
-                        <div className='col-md-3 col-md-3 bg-white p-3 m-2 shadow-md rounded text-center'>
-                            <h2>Commercial</h2>
-                            <p>We provide construction services for offices, retail spaces, and more.</p>
+                        <div className='col-md-4 col-md-3 bg-white p-1'>
+                            <div className='m-1 shadow-md rounded text-center'>
+                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
+                                    <Image src={"/Images/Home/Commercial_office.jpeg"} alt='Commercial_office' layout='fill' className='img-fluid ' />
+                                </div>
+                                <h2>Commercial</h2>
+                                <p>We provide construction services for offices, retail spaces, and more.</p>
+                            </div>
                         </div>
-                        <div className='col-md-3 col-md-3 bg-white p-3 m-2 shadow-md rounded text-center'>
-                            <h2>Industrial</h2>
-                            <p>We handle large-scale industrial projects with precision and expertise.</p>
+                        <div className='col-md-4 col-md-3 bg-white p-1'>
+                            <div className='m-1 shadow-md rounded text-center'>
+                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
+                                    <Image src={"/Images/Home/Industrial.jpeg"} alt='Industrial' layout='fill' className='img-fluid ' />
+                                </div>
+                                <h2>Industrial</h2>
+                                <p>We handle large-scale industrial projects with precision and expertise.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='text-center py-5'>
                     <h1>Our Projects</h1>
-                    <div className='d-flex justify-content-between'>
-                        <div className='col-md-3 text-center'>
-                            <p>Modern Office Building</p>
+                    <div className='col-md-12 row mx-0 d-flex justify-content-between'>
+                        <div className='col-md-4 text-center'>
+                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
+                                <Image src={"/Images/Home/Modern_Office_Building.jpeg"} alt='Modern_Office_Building' layout='fill' className='img-fluid ' />
+                            </div>
+                            <h4>Modern Office Building</h4>
                         </div>
-                        <div className='col-md-3 col-md-3 text-center'>
-                            <p>Luxury Villa</p>
+                        <div className='col-md-4 text-center'>
+                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
+                                <Image src={"/Images/Home/Luxury_Villa.jpeg"} alt='Luxury_Villa' layout='fill' className='img-fluid ' />
+                            </div>
+                            <h4>Luxury Villa</h4>
                         </div>
-                        <div className='col-md-3 col-md-3 text-center'>
-                            <p>Industrial Complex</p>
+                        <div className='col-md-4 text-center'>
+                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
+                                <Image src={"/Images/Home/Industrial_Complex.jpeg"} alt='Industrial_Complex' layout='fill' className='img-fluid ' />
+                            </div>
+                            <h4>Industrial Complex</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

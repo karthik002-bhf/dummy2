@@ -25,6 +25,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bg_img_css {
+  object-fit: cover;
+}
+
 .font12 {
   font-size: 12px;
 }
@@ -90,44 +94,62 @@ body {
 }
 
 .navbg {
-  background-color: #6071ba;
-  padding: 10px;
+  background-color: #e0e0e0;
+  padding: 1px;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #f3631a; */
   padding: 10px;
 }
 
-.navlink {
+.nav_link {
   color: #000;
   text-decoration: none;
   border-radius: 10px;
-  margin: 0 10px;
-  font-weight: bold;
 }
 
-.navlink:hover {
-  /* background-color: #f3631a; */
+.nav_link:hover {
   color: #aeb8e3;
   border-radius: 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .hover-dropdown:hover>.dropdown-menu {
   display: block;
   margin-top: 0;
-  /* Remove delay on dropdown appearance */
 }
 
-/* Optional: prevent flickering when moving from nav link to dropdown */
 .hover-dropdown .dropdown-toggle::after {
   display: none;
 }
 
-.dropdown-menu {
-  transition: all 0.3s ease;
+.hover-dropdown>.dropdown-menu {
+  margin-top: 0;
+  padding: 2px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hover-dropdown>.dropdown-menu>.dropdown-item{
+  
+}
+
+.hover-dropdown>.dropdown-menu>.dropdown-item:hover{
+  background-color: #fff;
+  color: #aeb8e3;
+  text-transform: uppercase;
+}
+
+.footer_link{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer_link:hover{
+  text-decoration: underline;
+  color: #000;
 }
