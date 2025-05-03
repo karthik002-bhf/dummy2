@@ -1,4 +1,4 @@
-
-
-module.exports = {
-  Output: { 'export': 'default' }}
+module.exports={
+    output: 'export',
+    trailingSlash: true
+};
