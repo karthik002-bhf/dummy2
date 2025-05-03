@@ -140,14 +140,14 @@ function page() {
     ];
     return (
         <div>
-            <div style={{ backgroundImage: 'url(/images/DesignServices/Design_services_banner_img.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '65vh', textAlign: 'center' }}>
-                <div className='overlay' style={{ width: '100%', height: '100%', position: 'absolute', top: '35%' }}>
+            <div style={{ backgroundImage: 'url(/images/DesignServices/Design_services_banner_img.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '40vh', textAlign: 'center' }}>
+                <div className='overlay' style={{ width: '100%', height: '100%', position: 'absolute', top: '15%' }}>
                     <div style={{ position: 'relative', zIndex: 1, color: '#FFF', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '2rem' }}>
                         <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Design Services</h1>
                         {/* <p style={{ fontSize: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>Quality solutions for residential and commercial properties</p> */}
                     </div>
                 </div>
-                <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', top: '65%', right: '2%' }}>
+                <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', top: '40%', right: '2%' }}>
                     <Button
                         variant="secondary"
                         size="large"
