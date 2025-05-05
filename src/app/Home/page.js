@@ -1,16 +1,16 @@
 import React from 'react'
-import BgImageTag from '../BgImageTag'
 import Image from 'next/image'
 
 function HomePage() {
     return (
         <div className=''>
-            <div className='' style={{ height: '70vh', width: '100%', position: 'relative', zIndex: 0, overflow: 'hidden' }}>
-                <div className='' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
-                    <div className='text-white text-center font50 bold'>Building Your Future</div>
-                    <div className='text-center text-white font18'>We deliver high-quality construction services with integrity and professionalism.</div>
+            <div style={{ backgroundImage: 'url(/Images/construction.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '70vh', textAlign: 'center' }}>
+                <div className='overlay' style={{ width: '100%', height: '100%', position: 'absolute', top: '35%' }}>
+                    <div style={{ position: 'relative', zIndex: 1, color: '#FFF', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '2rem' }}>
+                        <div className='text-white text-center font50 bold'>Building Your Future</div>
+                        <div className='text-center text-white font18'>We deliver high-quality construction services with integrity and professionalism.</div>
+                    </div>
                 </div>
-                <BgImageTag src={"/Images/construction.jpg"} alt='construction' layout='fill' />
             </div>
             <div className='container-fluid'>
                 <div className='text-center py-5'>

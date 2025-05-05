@@ -5,12 +5,12 @@
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -133,23 +133,36 @@ body {
   overflow: hidden;
 }
 
-.hover-dropdown>.dropdown-menu>.dropdown-item{
-  
-}
+/* .hover-dropdown>.dropdown-menu>.dropdown-item {} */
 
-.hover-dropdown>.dropdown-menu>.dropdown-item:hover{
+.hover-dropdown>.dropdown-menu>.dropdown-item:hover {
   background-color: #fff;
   color: #aeb8e3;
   text-transform: uppercase;
 }
 
-.footer_link{
+.footer_link {
   text-decoration: none;
   color: #000;
   font-size: 14px;
 }
 
-.footer_link:hover{
+.footer_link:hover {
   text-decoration: underline;
   color: #000;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.submit_btn {
+  background-color: #b13fbc;
+  color: #fff;
+}
+
+.submit_btn:hover {
+  background-color: #3f45bc;
+  color: #fff;
 }

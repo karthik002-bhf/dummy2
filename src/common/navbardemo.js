@@ -24,16 +24,16 @@ function NavbarDemo() {
             {/* <Nav.Link className='nav_link fw-bold' href="#action2">Home</Nav.Link> */}
               <NavDropdown title="E-Mart" id="E-Mart" className="nav_link hover-dropdown fw-bold dropdown_css">
                 <NavDropdown.Item href="/Tiles" className='drop_item'>Tiles</NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'>Plumbing</NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'>Sanitary</NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'>cement </NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'>steel</NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'>blocks </NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'> Construction Chemicals</NavDropdown.Item>
-                <NavDropdown.Item href="/" className='drop_item'> Aggregates </NavDropdown.Item>
+                <NavDropdown.Item href="/Plumbing" className='drop_item'>Plumbing</NavDropdown.Item>
+                <NavDropdown.Item href="/Sanitary" className='drop_item'>Sanitary</NavDropdown.Item>
+                <NavDropdown.Item href="/Cement" className='drop_item'>Cement </NavDropdown.Item>
+                <NavDropdown.Item href="/Steel" className='drop_item'>Steel</NavDropdown.Item>
+                <NavDropdown.Item href="/Blocks" className='drop_item'>Blocks </NavDropdown.Item>
+                <NavDropdown.Item href="/Construction Chemical" className='drop_item'> Construction Chemicals</NavDropdown.Item>
+                <NavDropdown.Item href="/Aggregates" className='drop_item'> Aggregates </NavDropdown.Item>
               </NavDropdown>
-              {/* <Nav.Link className='nav_link fw-bold' href="#action1">Construction</Nav.Link> */}
-              <NavDropdown title="Construction Tech Services" id="Construction Tech Service" className="nav_link hover-dropdown  fw-bold dropdown_css">
+              <Nav.Link className=' hover-dropdown fw-bold' href="/DesignBuild">Design Build</Nav.Link>
+              <NavDropdown title="Construction Tech Services" id="Construction Tech Service" className="nav_link hover-dropdown fw-bold dropdown_css">
                 <NavDropdown.Item href="/DesignServices" className='drop_item'>Design Services</NavDropdown.Item>
                 <NavDropdown.Item href="/PMC" className='drop_item'>Project Management Consultant</NavDropdown.Item>
                 <NavDropdown.Item href="/LabTest" className='drop_item'>Laboratory Testing</NavDropdown.Item>

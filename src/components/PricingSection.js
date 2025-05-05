@@ -25,7 +25,7 @@ function PricingSection({ pricingData }) {
         </tbody>
       </Table>
 
-      <div className='mt-2' style={{ fontSize: '0.9rem', color: '#555' }}>
+      <div className='' style={{ fontSize: '14px', color: '#555' }}>
         <i>* Final pricing may vary based on specific project requirements and site conditions.</i>
       </div>
     </div>
