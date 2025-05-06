@@ -159,6 +159,7 @@ body {
 .submit_btn {
   background-color: #b13fbc;
   color: #fff;
+  border-radius: 10px;
 }
 
 .submit_btn:hover {

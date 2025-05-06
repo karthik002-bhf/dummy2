@@ -75,7 +75,7 @@ function ContactSection() {
                     <FormikControl control="input" type="text" label="Nearest Landmark*" name="landmark" classname='form-control' divclass='py-2' />
                     <FormikControl control="textarea" type="text" label="Message" name="message" classname='form-control' divclass='py-2' />
                     <div className='pt-4 d-flex justify-content-center'>
-                      <LoadButton bname={loading ? 'Sending...' : 'Send Message'} bclass='btn btn-md submit_btn py-2 px-3' type='submit' isLoading={loading} />
+                      <LoadButton bname={loading ? 'Sending...' : 'Send Message'} bclass='btn-md submit_btn py-2 px-3' type='submit' isLoading={loading} />
                     </div>
                   </Form>
                 )
