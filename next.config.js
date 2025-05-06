@@ -1,7 +1,7 @@
-// module.exports={
-//     output: 'export',
-//     trailingSlash: true
-// };
+module.exports={
+    output: 'export',
+    trailingSlash: true
+};
 
 /**
  * @type {import('next').NextConfig}
