@@ -8,8 +8,13 @@ function WhyChooseUs({ features }) {
       <h1 className='text-center my-4'>Why Choose Us?</h1>
       <div className='col-md-12 row mx-0 d-flex justify-content-around'>
         {features?.map((feature) => (
-          <div className='col-4 col-md-2 my-2 my-md-0' key={feature.id}>
-            <Box
+          <div className='col-4 col-md-2 my-2 my-md-0' key={feature?.id}>
+            <div className='d-flex justify-content-center align-items-center flex-column box'>
+              <div className='icon_css' >{feature?.icon}</div>
+              <h5 className='font14'>{feature?.title}</h5>
+              <div>{feature?.description}</div>
+            </div>
+            {/* <Box
               sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -31,13 +36,13 @@ function WhyChooseUs({ features }) {
                   color: 'primary.main'
                 }}
               >
-                {feature.icon}
+                {feature?.icon}
               </Avatar>
               <Box>
-                <h5 className='font14'>{feature.title}</h5>
-                <div>{feature.description}</div>
+                <h5 className='font14'>{feature?.title}</h5>
+                <div>{feature?.description}</div>
               </Box>
-            </Box>
+            </Box> */}
           </div>
         ))}
       </div>

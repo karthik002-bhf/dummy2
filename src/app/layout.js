@@ -3,6 +3,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarDemo from "@/common/navbardemo";
 import Footer from "@/common/Footer";
+import DemoNav from "@/common/demoNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavbarDemo />
+        {/* <DemoNav /> */}
         {children}
         <Footer />
       </body>

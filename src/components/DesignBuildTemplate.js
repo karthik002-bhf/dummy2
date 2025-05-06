@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function DesignBuildTemplate({ data }) {
@@ -10,13 +11,16 @@ function DesignBuildTemplate({ data }) {
 
       <div className="row mb-5">
         <div className="col-md-6 my-auto">
-          <div style={{ height: '400px', overflow: 'hidden' }} className=" shadow-lg">
+          <div className='shadow-lg rounded-lg my-2 my-md-0 img_div'>
+            <Image src={data?.mainImage} alt="Feature Image" fill className='img_css' />
+          </div>
+          {/* <div style={{ height: '400px', overflow: 'hidden' }} className=" shadow-lg">
             <img
               src={data?.mainImage}
               alt="Main Content"
               className="img-fluid rounded shadow w-100 h-100"
             />
-          </div>
+          </div> */}
         </div>
         <div className="col-md-6 my-auto">
           <div className="card h-100 border-success shadow-lg">

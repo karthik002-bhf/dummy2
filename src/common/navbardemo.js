@@ -1,63 +1,75 @@
 'use client'
 import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 function NavbarDemo() {
+  // const [isMobile, setIsMobile] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     const handleResize = () => {
+  //       setIsMobile(window.innerWidth < 768);
+  //     };
+  //     handleResize();
+  //     window.addEventListener('resize', handleResize);
+  //     return () => window.removeEventListener('resize', handleResize);
+  //   }
+  // }, []);
+
+
+
   return (
-    <Navbar expand="lg" className="nav navbg" sticky='top'>
+    <Navbar expand="lg" className="nav navbg" sticky='top' expanded={expanded} onToggle={() => setExpanded(!expanded)}>
       <Container fluid>
         <Navbar.Brand href="/">
           <div className='d-flex'>
             <span style={{ borderRadius: '70%', overflow: 'hidden' }} className='my-auto mx-1'>
               <Image src={"/Images/BHF_logo.jpg"} alt='' className='' width={50} height={50} />
             </span>
-            <span className='my-auto mx-1'>BuildHomesFine</span>
+            <span className='my-auto mx-1 fw-bold' /*style={{ display: isMobile ? '' : 'block' }}*/ >BuildHomesFine</span>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className='d-flex justify-content-end'>
-          <Nav
-            className=" my-2 my-lg-0 "
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
+        <Navbar.Collapse id="navbarScroll" className='d-lg-flex justify-content-sm-end text-sm-end'>
+          <Nav className="my-1 my-lg-0 ">
             {/* <Nav.Link className='nav_link fw-bold' href="#action2">Home</Nav.Link> */}
-              <NavDropdown title="E-Mart" id="E-Mart" className="nav_link hover-dropdown fw-bold dropdown_css">
-                <NavDropdown.Item href="/Tiles" className='drop_item'>Tiles</NavDropdown.Item>
-                <NavDropdown.Item href="/Plumbing" className='drop_item'>Plumbing</NavDropdown.Item>
-                <NavDropdown.Item href="/Sanitary" className='drop_item'>Sanitary</NavDropdown.Item>
-                <NavDropdown.Item href="/Cement" className='drop_item'>Cement </NavDropdown.Item>
-                <NavDropdown.Item href="/Steel" className='drop_item'>Steel</NavDropdown.Item>
-                <NavDropdown.Item href="/Blocks" className='drop_item'>Blocks </NavDropdown.Item>
-                <NavDropdown.Item href="/Construction Chemical" className='drop_item'> Construction Chemicals</NavDropdown.Item>
-                <NavDropdown.Item href="/Aggregates" className='drop_item'> Aggregates </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link className=' hover-dropdown fw-bold' href="/DesignBuild">Design Build</Nav.Link>
-              <NavDropdown title="Construction Tech Services" id="Construction Tech Service" className="nav_link hover-dropdown fw-bold dropdown_css">
-                <NavDropdown.Item href="/DesignServices" className='drop_item'>Design Services</NavDropdown.Item>
-                <NavDropdown.Item href="/PMC" className='drop_item'>Project Management Consultant</NavDropdown.Item>
-                <NavDropdown.Item href="/LabTest" className='drop_item'>Laboratory Testing</NavDropdown.Item>
-                <NavDropdown.Item href="/Interiors" className='drop_item'>Interiors Design</NavDropdown.Item>
-                <NavDropdown.Item href="/Waterproof" className='drop_item'>Waterproofing</NavDropdown.Item>
-                <NavDropdown.Item href="/RepairAndRenovations" className='drop_item'>Repair & Renovation</NavDropdown.Item>
-                <NavDropdown.Item href="/Painting" className='drop_item'>Painting</NavDropdown.Item>
-              </NavDropdown>
-              {/* <Nav.Link className='nav_link fw-bold' href="#action5">Construction Tech Services</Nav.Link> */}
-              <NavDropdown title="Contract & Other Services" id="Contract & Other Services" className="hover-dropdown nav_link fw-bold">
-                <NavDropdown.Item href="/">Service 4</NavDropdown.Item>
-                <NavDropdown.Item href="/">Service 5</NavDropdown.Item>
-                <NavDropdown.Item href="/">Service 6</NavDropdown.Item>
-              </NavDropdown>
-              {/* <Nav.Link className='nav_link fw-bold' href="#action6">Contract & Other Services</Nav.Link> */}
-              <Nav.Link className='nav_link fw-bold' href="/">Contact</Nav.Link>
+            <NavDropdown title="E-Mart" id="E-Mart" className="nav_link  hover-dropdown fw-bold dropdown_css px-md-1">
+              <NavDropdown.Item href="/Tiles" className='' onClick={() => setExpanded(false)}>Tiles</NavDropdown.Item>
+              <NavDropdown.Item href="/Plumbing" className='' onClick={() => setExpanded(false)}>Plumbing</NavDropdown.Item>
+              <NavDropdown.Item href="/Sanitary" className='' onClick={() => setExpanded(false)}>Sanitary</NavDropdown.Item>
+              <NavDropdown.Item href="/Cement" className='' onClick={() => setExpanded(false)}>Cement </NavDropdown.Item>
+              <NavDropdown.Item href="/Steel" className='' onClick={() => setExpanded(false)}>Steel</NavDropdown.Item>
+              <NavDropdown.Item href="/Blocks" className='' onClick={() => setExpanded(false)}>Blocks </NavDropdown.Item>
+              <NavDropdown.Item href="/Construction Chemical" className='' onClick={() => setExpanded(false)}> Construction Chemicals</NavDropdown.Item>
+              <NavDropdown.Item href="/Aggregates" className='' onClick={() => setExpanded(false)}> Aggregates </NavDropdown.Item>
+            </NavDropdown>
 
+            <Nav.Link className=' hover-dropdown fw-bold px-md-1 text-sm-end' href="/DesignBuild" onClick={() => setExpanded(false)}>Design Build</Nav.Link>
 
+            <NavDropdown title="Construction Tech Services" id="Construction Tech Service" className="nav_link hover-dropdown  fw-bold dropdown_css px-md-1">
+              <NavDropdown.Item href="/DesignServices" className='' onClick={() => setExpanded(false)}>Design Services</NavDropdown.Item>
+              <NavDropdown.Item href="/PMC" className='' onClick={() => setExpanded(false)}>Project Management Consultant</NavDropdown.Item>
+              <NavDropdown.Item href="/LabTest" className='' onClick={() => setExpanded(false)}>Laboratory Testing</NavDropdown.Item>
+              <NavDropdown.Item href="/Interiors" className='' onClick={() => setExpanded(false)}>Interiors Design</NavDropdown.Item>
+              <NavDropdown.Item href="/Waterproof" className='' onClick={() => setExpanded(false)}>Waterproofing</NavDropdown.Item>
+              <NavDropdown.Item href="/RepairAndRenovations" className='' onClick={() => setExpanded(false)}>Repair & Renovation</NavDropdown.Item>
+              <NavDropdown.Item href="/Painting" className='' onClick={() => setExpanded(false)}>Painting</NavDropdown.Item>
+            </NavDropdown>
 
-            </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        );
+            <NavDropdown title="Contract & Other Services" id="Contract & Other Services" className=" hover-dropdown nav_link fw-bold px-md-1">
+              <NavDropdown.Item href="/" onClick={() => setExpanded(false)}>Service 4</NavDropdown.Item>
+              <NavDropdown.Item href="/" onClick={() => setExpanded(false)}>Service 5</NavDropdown.Item>
+              <NavDropdown.Item href="/" onClick={() => setExpanded(false)}>Service 6</NavDropdown.Item>
+            </NavDropdown>
+            {/* <Nav.Link className='nav_link fw-bold' href="#action6">Contract & Other Services</Nav.Link> */}
+            <Nav.Link className='nav_link fw-bold px-md-1 text-sm-end my-auto' href="/" onClick={() => setExpanded(false)}>Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-        export default NavbarDemo;
+export default NavbarDemo;
