@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import FormikControl from './formikControls/FormikControl';
 import LoadButton from './formikControls/LoadButton';
 
-function ContactSection() {
+function ContactSection({from}) {
   const [loading, setLoading] = useState(false);
 
   const initialValues = {
@@ -51,15 +51,15 @@ function ContactSection() {
   }
 
   return (
-    <div className='container my-4'>
+    <div className=' my-4'>
       <h1 className='text-center'>
         Contact Us
       </h1>
       <div className='text-center mb-4' style={{ fontSize: '1rem' }}>
         Get in touch for a free consultation or to discuss your project needs
       </div>
-      <div className='col-md-12 row d-flex justify-content-center'>
-        <div className='col-md-6 card p-5 shadow-sm'>
+      <div className='col-md-12 row mx-0 d-flex justify-content-center'>
+        <div className={`${from == 'modal' ? '' : 'col-md-6'} card p-5 shadow-sm`}>
           <h4 className='text-center'>Send us a message</h4>
           <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
             {

@@ -27,7 +27,7 @@ function DesignBuildTemplate({ data }) {
             <div className="card-body">
               <h3 className="card-title text-success">Key Features</h3>
               <ul className="list-group list-group-flush">
-                {data?.features.map((feature, index) => (
+                {data?.features?.map((feature, index) => (
                   <li key={index} className="list-group-item">
                     <strong className="text-success">{feature.title}</strong> {feature.description}
                   </li>
@@ -38,35 +38,38 @@ function DesignBuildTemplate({ data }) {
         </div>
       </div>
 
-      <div className="row mb-5">
-        <div className="col-12">
-          <div className="card border-success">
-            <div className="card-header bg-success text-white">
-              <h3 className="mb-0">Cost Comparison</h3>
-            </div>
-            <div className="card-body">
-              <div className="table-responsive">
-                <table className="table table-striped table-hover">
-                  <thead className="table-success">
-                    <tr>
-                      <th>Type</th>
-                      <th>Approx. Cost (INR per sq. ft.)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {data?.costComparison.map((item, index) => (
-                      <tr key={index}>
-                        <td>{item.type}</td>
-                        <td>{item.cost}</td>
+      {
+        data?.costComparison &&
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className="card border-success">
+              <div className="card-header bg-success text-white">
+                <h3 className="mb-0">Cost Comparison</h3>
+              </div>
+              <div className="card-body">
+                <div className="table-responsive">
+                  <table className="table table-striped table-hover">
+                    <thead className="table-success">
+                      <tr>
+                        <th>Type</th>
+                        <th>Approx. Cost (INR per sq. ft.)</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody>
+                      {data?.costComparison?.map((item, index) => (
+                        <tr key={index}>
+                          <td>{item.type}</td>
+                          <td>{item.cost}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      }
     </div>
   );
 };

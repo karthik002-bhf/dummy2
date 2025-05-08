@@ -34,13 +34,13 @@ function NavbarDemo() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className='d-lg-flex justify-content-sm-end text-sm-end'>
           <Nav className="my-1 my-lg-0 ">
-            {/* <Nav.Link className='nav_link fw-bold' href="#action2">Home</Nav.Link> */}
+            <Nav.Link className='nav_link fw-bold' href="/Shop">Shop</Nav.Link>
             <NavDropdown title="E-Mart" id="E-Mart" className="nav_link  hover-dropdown fw-bold dropdown_css px-md-1">
-              <NavDropdown.Item href="/Tiles" className='' onClick={() => setExpanded(false)}>Tiles</NavDropdown.Item>
-              <NavDropdown.Item href="/Plumbing" className='' onClick={() => setExpanded(false)}>Plumbing</NavDropdown.Item>
-              <NavDropdown.Item href="/Sanitary" className='' onClick={() => setExpanded(false)}>Sanitary</NavDropdown.Item>
-              <NavDropdown.Item href="/Cement" className='' onClick={() => setExpanded(false)}>Cement </NavDropdown.Item>
-              <NavDropdown.Item href="/Steel" className='' onClick={() => setExpanded(false)}>Steel</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/Tiles" className='' onClick={() => setExpanded(false)}>Tiles</NavDropdown.Item> */}
+              {/* <NavDropdown.Item href="/Plumbing" className='' onClick={() => setExpanded(false)}>Plumbing</NavDropdown.Item> */}
+              {/* <NavDropdown.Item href="/Sanitary" className='' onClick={() => setExpanded(false)}>Sanitary</NavDropdown.Item> */}
+              {/* <NavDropdown.Item href="/Cement" className='' onClick={() => setExpanded(false)}>Cement </NavDropdown.Item> */}
+              {/* <NavDropdown.Item href="/Steel" className='' onClick={() => setExpanded(false)}>Steel</NavDropdown.Item> */}
               <NavDropdown.Item href="/Blocks" className='' onClick={() => setExpanded(false)}>Blocks </NavDropdown.Item>
               <NavDropdown.Item href="/Construction Chemical" className='' onClick={() => setExpanded(false)}> Construction Chemicals</NavDropdown.Item>
               <NavDropdown.Item href="/Aggregates" className='' onClick={() => setExpanded(false)}> Aggregates </NavDropdown.Item>

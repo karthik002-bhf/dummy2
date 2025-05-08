@@ -23,20 +23,20 @@ function page() {
                 description: "Reduces operational costs and targets green certifications like IGBC or LEED."
             }
         ],
-        costComparison: [
-            {
-                type: "Basic Green Building",
-                cost: "₹2,000 – ₹2,500"
-            },
-            {
-                type: "Mid-range Green Building",
-                cost: "₹2,500 – ₹3,500"
-            },
-            {
-                type: "Premium Green Building",
-                cost: "₹3,500 – ₹5,000+"
-            }
-        ],
+        // costComparison: [
+        //     {
+        //         type: "Basic Green Building",
+        //         cost: "₹2,000 – ₹2,500"
+        //     },
+        //     {
+        //         type: "Mid-range Green Building",
+        //         cost: "₹2,500 – ₹3,500"
+        //     },
+        //     {
+        //         type: "Premium Green Building",
+        //         cost: "₹3,500 – ₹5,000+"
+        //     }
+        // ],
         mainImage: "/Images/DesignBuild/green_building.jpeg",
     };
 
@@ -61,20 +61,20 @@ function page() {
                 description: "Designed for minimal maintenance with affordable monthly costs in mind—ideal for first-time homeowners."
             }
         ],
-        costComparison: [
-            {
-                type: "Basic Budget Home",
-                cost: "₹1,200 – ₹1,500"
-            },
-            {
-                type: "Mid-range Budget Home",
-                cost: "₹1,500 – ₹2,000"
-            },
-            {
-                type: "Higher-end Budget Home",
-                cost: "₹2,000 – ₹2,500"
-            }
-        ],
+        // costComparison: [
+        //     {
+        //         type: "Basic Budget Home",
+        //         cost: "₹1,200 – ₹1,500"
+        //     },
+        //     {
+        //         type: "Mid-range Budget Home",
+        //         cost: "₹1,500 – ₹2,000"
+        //     },
+        //     {
+        //         type: "Higher-end Budget Home",
+        //         cost: "₹2,000 – ₹2,500"
+        //     }
+        // ],
         mainImage: "/Images/DesignBuild/dream_budget_home.jpeg",
     };
 
@@ -99,20 +99,20 @@ function page() {
                 description: "Built in prime locations with top-tier security, private gardens/pools, and elegant landscaping for a lavish lifestyle."
             }
         ],
-        costComparison: [
-            {
-                type: "Entry-level Premium Home",
-                cost: "₹4,000 – ₹6,000"
-            },
-            {
-                type: "Mid-level Premium Home",
-                cost: "₹6,000 – ₹9,000"
-            },
-            {
-                type: "Ultra Luxury Home",
-                cost: "₹9,000 – ₹15,000+"
-            }
-        ],
+        // costComparison: [
+        //     {
+        //         type: "Entry-level Premium Home",
+        //         cost: "₹4,000 – ₹6,000"
+        //     },
+        //     {
+        //         type: "Mid-level Premium Home",
+        //         cost: "₹6,000 – ₹9,000"
+        //     },
+        //     {
+        //         type: "Ultra Luxury Home",
+        //         cost: "₹9,000 – ₹15,000+"
+        //     }
+        // ],
         mainImage: "/Images/DesignBuild/premium_home.jpeg",
     };
 
@@ -137,22 +137,41 @@ function page() {
                 description: "Located in ultra-prime areas with tight security, private driveways, landscaped courtyards, helipads, and high social status appeal."
             }
         ],
+        // costComparison: [
+        //     {
+        //         type: "Entry-level Mansion Home",
+        //         cost: "₹12,000 – ₹18,000"
+        //     },
+        //     {
+        //         type: "Ultra Luxury Mansion",
+        //         cost: "₹18,000 – ₹30,000"
+        //     },
+        //     {
+        //         type: "Bespoke Mansion (Fully Custom)",
+        //         cost: "₹30,000+"
+        //     }
+        // ],
         costComparison: [
             {
-                type: "Entry-level Mansion Home",
-                cost: "₹12,000 – ₹18,000"
+                type: "Green Building Concept",
+                cost: "₹2,500 – ₹3,500"
             },
             {
-                type: "Ultra Luxury Mansion",
+                type: "A Dream Budget Home",
+                cost: "₹1,500 – ₹2,000"
+            },
+            {
+                type: "Premium Home",
+                cost: "₹6,000 – ₹9,000"
+            },
+            {
+                type: "Premium Plus Home",
                 cost: "₹18,000 – ₹30,000"
-            },
-            {
-                type: "Bespoke Mansion (Fully Custom)",
-                cost: "₹30,000+"
             }
         ],
         mainImage: "/Images/DesignBuild/premium_plus_home.jpeg",
     };
+
     return (
         <div>
             <DesignBuildTemplate data={greenBuildingData} />

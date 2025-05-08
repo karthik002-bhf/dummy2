@@ -4,10 +4,10 @@ import Image from 'next/image'
 function HomePage() {
     return (
         <div className=''>
-            <div style={{ backgroundImage: 'url(/Images/construction.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', height: '70vh', textAlign: 'center' }}>
-                <div className='overlay' style={{ width: '100%', height: '100%', position: 'absolute', top: '35%' }}>
+            <div style={{ backgroundImage: 'url(/Images/photo-collage.png.png)', backgroundSize: 'cover', backgroundPosition: 'center', height: '70vh', textAlign: 'center' }}>
+                <div className='overlay' style={{ width: '100%', height: '60%', position: 'absolute', top: '60%' }}>
                     <div style={{ position: 'relative', zIndex: 1, color: '#FFF', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '2rem' }}>
-                        <div className='text-white text-center font50 bold'>Building Your Future</div>
+                        <div className='text-white text-center font32 bold'>Building Your Future</div>
                         <div className='text-center text-white font18'>We deliver high-quality construction services with integrity and professionalism.</div>
                     </div>
                 </div>

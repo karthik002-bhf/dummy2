@@ -32,8 +32,12 @@ export default function RootLayout({ children }) {
       >
         <NavbarDemo />
         {/* <DemoNav /> */}
-        {children}
-        <Footer />
+        <div className="min-h-screen">
+          {children}
+        </div>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
