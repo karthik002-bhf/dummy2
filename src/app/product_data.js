@@ -2,9 +2,12 @@ export const data = {
   category: [
     {
       name: 'Blocks',
+      cat_slug:'blocks',
       products: [
         {
           prd_name: "4 Inch Block",
+          prd_slug: '4-inch-block',
+          prd_cat: 'blocks',
           prd_dimensions: '100mm x 200mm x 400mm',
           prd_short_description: 'Ideal for partition walls and lightweight applications',
           prd_description: `<p>
@@ -19,14 +22,17 @@ export const data = {
     choice for modern construction needs.
   </p>`,
           prd_img: '/Images/E-Mart/Solid Blocks/4-inch-solid-block.jpg',
-          prd_price: '',
+          prd_price: '₹ 25 /block',
           prd_code: ''
         },
         {
           prd_name: "6 Inch Block",
+          prd_slug: '6-inch-block',
+          prd_cat: 'blocks',
           prd_dimensions: '150mm x 200mm x 400mm',
           prd_short_description: 'A perfect balance of strength and weight.',
-          prd_description: ` <p>
+          prd_description: ` <div>
+          <p>
     Solid concrete blocks are engineered to provide the ideal combination of structural strength and manageable weight, 
     making them an optimal choice for a wide range of construction applications. Their dense composition ensures stability 
     and durability, while their moderate weight allows for easier handling and quicker installation on-site.
@@ -36,16 +42,20 @@ export const data = {
     the support needed for robust construction without the excess bulk that can slow down the building process. 
     Whether used in foundations, partition walls, or infill systems, solid blocks deliver long-lasting performance 
     while simplifying construction workflows.
-  </p>`,
+  </p>
+  </div>`,
           prd_img: '/Images/E-Mart/Solid Blocks/solid-blocks-6-inch.jpg',
-          prd_price: '',
+          prd_price: '₹ 30 /block',
           prd_code: ''
         },
         {
           prd_name: "8 Inch Block",
+          prd_slug: '8-inch-block',
+          prd_cat: 'blocks',
           prd_dimensions: '200mm x 200mm x 400mm',
           prd_short_description: 'Best suited for load-bearing walls.',
-          prd_description: `<p>
+          prd_description: `<div>
+          <p>
     Solid concrete blocks are highly recommended for load-bearing walls due to their exceptional compressive strength and structural integrity. 
     These blocks are specifically designed to support substantial loads, making them ideal for foundational and structural elements 
     in residential, commercial, and industrial buildings.
@@ -59,34 +69,44 @@ export const data = {
     In addition to strength, these blocks offer consistent dimensions and smooth surfaces, 
     which contribute to uniform construction and reduced plastering work, making them a cost-effective and reliable choice 
     for structural applications.
-  </p>`,
+  </p>
+  </div>`,
           prd_img: '/Images/E-Mart/Solid Blocks/Solid_Block-8-inch.png',
-          prd_price: '',
+          prd_price: '₹ 35 /block',
           prd_code: ''
         }
       ]
     },
     {
       name: 'Sand',
+      cat_slug:'sand',
       products: [
         {
           prd_name: "p-Sand",
+          prd_slug: 'p-sand',
+          prd_cat: 'sand',
           prd_short_description: 'M Sand for plastering is a finely crushed, high-quality sand that ensures smooth finishes, better bonding, and durability in plastering applications.',
-          prd_description: `<p><strong>M Sand for plastering</strong> is a specially manufactured sand that is produced by crushing hard granite stones or rocks. It is engineered to have uniform particle size and smooth texture, which makes it ideal for plastering applications. Unlike natural river sand, M Sand is free from impurities such as clay, silt, and organic materials, ensuring a clean and consistent product. This quality enhances the bonding strength between the plaster and the surface, resulting in a stronger, more durable finish.</p>
+          prd_description: `<div>
+          <p><strong>M Sand for plastering</strong> is a specially manufactured sand that is produced by crushing hard granite stones or rocks. It is engineered to have uniform particle size and smooth texture, which makes it ideal for plastering applications. Unlike natural river sand, M Sand is free from impurities such as clay, silt, and organic materials, ensuring a clean and consistent product. This quality enhances the bonding strength between the plaster and the surface, resulting in a stronger, more durable finish.</p>
 
-    <p>Additionally, M Sand's finely graded particles allow for smoother application and better workability, reducing the chances of shrinkage and cracks over time. It also offers higher compressive strength, which improves the longevity of plastered surfaces. Being a sustainable and eco-friendly alternative to natural sand, M Sand helps in conserving river ecosystems while providing reliable performance in construction projects.</p>`,
+    <p>Additionally, M Sand's finely graded particles allow for smoother application and better workability, reducing the chances of shrinkage and cracks over time. It also offers higher compressive strength, which improves the longevity of plastered surfaces. Being a sustainable and eco-friendly alternative to natural sand, M Sand helps in conserving river ecosystems while providing reliable performance in construction projects.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Sand/p-sand.jpeg',
           prd_price: '',
           prd_code: ''
         },
         {
           prd_name: "c-Sand",
+          prd_slug: 'c-sand',
+          prd_cat: 'sand',
           prd_short_description: 'M Sand for concrete mix is a high-quality, finely graded sand that enhances the strength, durability, and workability of concrete while ensuring a consistent and reliable mix.',
-          prd_description: `<p><strong>M Sand for concrete mix</strong> is a specially manufactured sand created by crushing hard granite rocks. It is designed to have a consistent particle size and uniform texture, making it an ideal material for use in concrete mixes. Unlike natural river sand, M Sand is free from impurities like clay, silt, and organic matter, ensuring that it doesn't compromise the quality of the concrete.</p>
+          prd_description: `<div>
+          <p><strong>M Sand for concrete mix</strong> is a specially manufactured sand created by crushing hard granite rocks. It is designed to have a consistent particle size and uniform texture, making it an ideal material for use in concrete mixes. Unlike natural river sand, M Sand is free from impurities like clay, silt, and organic matter, ensuring that it doesn't compromise the quality of the concrete.</p>
 
     <p>The use of M Sand in concrete mix enhances the strength and durability of the concrete, offering superior performance compared to traditional sand. Its well-graded particles improve the workability of the concrete, making it easier to handle and pour. Additionally, M Sand helps reduce the overall shrinkage and cracking in the concrete, which improves the longevity and stability of the structure.</p>
 
-    <p>As an eco-friendly and sustainable alternative to natural river sand, M Sand is produced through controlled processes that reduce environmental impact. This makes it a reliable and cost-effective choice for construction projects, ensuring both quality and sustainability in every mix.</p>`,
+    <p>As an eco-friendly and sustainable alternative to natural river sand, M Sand is produced through controlled processes that reduce environmental impact. This makes it a reliable and cost-effective choice for construction projects, ensuring both quality and sustainability in every mix.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Sand/p-sand.jpeg',
           prd_price: '',
           prd_code: ''
@@ -94,52 +114,69 @@ export const data = {
       ]
     },
     {
-      name: 'Aggregates (Jelly)',
+      name: 'Aggregates',
+      cat_slug:'aggregates',
       products: [
         {
           prd_name: "6mm Aggregates",
+          prd_slug: '6mm-aggregates',
+          prd_cat: 'aggregates',
           prd_short_description: 'Small, finely graded stones used in concrete mixes to improve workability and provide better bonding and strength in construction applications.',
-          prd_description: `<p><strong>6mm size aggregates</strong> are finely graded, small-sized stones commonly used in various construction applications. These aggregates are typically made by crushing larger stones into smaller particles, with a uniform size of 6mm. They play an essential role in enhancing the quality and durability of concrete and mortar mixes.</p>
+          prd_description: `<div>
+          <p><strong>6mm size aggregates</strong> are finely graded, small-sized stones commonly used in various construction applications. These aggregates are typically made by crushing larger stones into smaller particles, with a uniform size of 6mm. They play an essential role in enhancing the quality and durability of concrete and mortar mixes.</p>
 
     <p>The 6mm aggregates are ideal for use in projects where a smoother finish is required, such as in plastering, flooring, and brickwork. Due to their small size, they offer better workability and improved bonding, making the mix easier to handle and apply. The uniform particle size of 6mm aggregates ensures a consistent mix and enhances the overall strength and cohesion of the concrete.</p>
 
-    <p>These aggregates are also used in the production of high-strength concrete, as they help fill in gaps between larger aggregates, improving the compactness of the mix and reducing voids. Moreover, 6mm aggregates are suitable for applications where a fine and smooth texture is required, making them versatile and reliable for a wide range of construction needs.</p>`,
+    <p>These aggregates are also used in the production of high-strength concrete, as they help fill in gaps between larger aggregates, improving the compactness of the mix and reducing voids. Moreover, 6mm aggregates are suitable for applications where a fine and smooth texture is required, making them versatile and reliable for a wide range of construction needs.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Aggregate/6mm-aggregate.jpeg',
           prd_price: '',
           prd_code: ''
         },
         {
           prd_name: "12mm Aggregates",
+          prd_slug: '12mm-aggregates',
+          prd_cat: 'aggregates',
           prd_short_description: 'Medium-sized stones used in concrete mixes to enhance strength, improve workability, and provide a balanced structure in construction applications.',
-          prd_description: `<p><strong>12mm size aggregates</strong> are medium-sized stones commonly used in construction projects, particularly in concrete mixes. These aggregates are typically produced by crushing larger stones into uniform pieces with a size of 12mm, making them ideal for creating strong and durable concrete structures.</p>
+          prd_description: `<div>
+          <p><strong>12mm size aggregates</strong> are medium-sized stones commonly used in construction projects, particularly in concrete mixes. These aggregates are typically produced by crushing larger stones into uniform pieces with a size of 12mm, making them ideal for creating strong and durable concrete structures.</p>
 
     <p>Due to their moderate size, 12mm aggregates provide a good balance between strength and workability. They are often used in the production of reinforced concrete, providing the necessary bonding between cement, water, and larger aggregates. Their size helps create a denser mix, improving the overall strength and stability of the concrete while ensuring that the mixture is easy to handle and pour.</p>
 
-    <p>12mm aggregates are particularly useful in applications where medium-strength concrete is needed, such as for foundations, slabs, roads, and pavements. Their ability to fill in gaps between larger aggregates contributes to the uniformity of the concrete mix, ensuring a solid structure with fewer voids. Additionally, they are well-suited for creating high-performance concrete, where both strength and durability are essential.</p>`,
+    <p>12mm aggregates are particularly useful in applications where medium-strength concrete is needed, such as for foundations, slabs, roads, and pavements. Their ability to fill in gaps between larger aggregates contributes to the uniformity of the concrete mix, ensuring a solid structure with fewer voids. Additionally, they are well-suited for creating high-performance concrete, where both strength and durability are essential.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Aggregate/12-mm-Aggregate.jpeg',
           prd_price: '',
           prd_code: ''
         },
         {
           prd_name: "20mm Aggregates",
+          prd_slug: '20mm-aggregates',
+          prd_cat: 'aggregates',
           prd_short_description: 'larger stones used in concrete mixes to provide structural strength, enhance durability, and improve the overall load-bearing capacity of construction projects.',
-          prd_description: `<p><strong>20mm size aggregates</strong> are large-sized stones commonly used in construction for making concrete mixes, especially in applications that require high strength and load-bearing capacity. These aggregates are produced by crushing larger rocks into uniform 20mm particles, providing the perfect balance between strength and stability.</p>
+          prd_description: `<div>
+          <p><strong>20mm size aggregates</strong> are large-sized stones commonly used in construction for making concrete mixes, especially in applications that require high strength and load-bearing capacity. These aggregates are produced by crushing larger rocks into uniform 20mm particles, providing the perfect balance between strength and stability.</p>
 
     <p>These aggregates are essential for creating concrete used in heavy-duty applications such as highways, bridges, high-rise buildings, and large infrastructure projects. The larger size of the aggregates ensures better compaction in the concrete mix, enhancing its overall density and providing improved structural integrity and durability.</p>
 
-    <p>In addition to their role in providing strength, 20mm aggregates contribute to the concrete’s workability, allowing for easier mixing and application. Their ability to fill larger voids between smaller aggregates results in a denser and more cohesive mixture, reducing the likelihood of cracks and improving the long-term stability of the structure. As such, they are vital for projects that require concrete with high strength, durability, and resistance to wear and tear.</p>`,
+    <p>In addition to their role in providing strength, 20mm aggregates contribute to the concrete’s workability, allowing for easier mixing and application. Their ability to fill larger voids between smaller aggregates results in a denser and more cohesive mixture, reducing the likelihood of cracks and improving the long-term stability of the structure. As such, they are vital for projects that require concrete with high strength, durability, and resistance to wear and tear.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Aggregate/Aggregate - 20mm.jpeg',
           prd_price: '',
           prd_code: ''
         },
         {
           prd_name: "40mm Aggregates",
+          prd_slug: '40-aggregates',
+          prd_cat: 'aggregates',
           prd_short_description: 'large stones used in concrete mixes to provide superior strength, enhance durability, and support heavy structural loads in large-scale construction projects.',
-          prd_description: `<p><strong>40mm size aggregates</strong> are large-sized stones commonly used in heavy-duty concrete mixes for large-scale construction projects. These aggregates are produced by crushing larger rocks into uniform 40mm particles, offering exceptional strength and structural integrity in concrete formulations.</p>
+          prd_description: `<div>
+          <p><strong>40mm size aggregates</strong> are large-sized stones commonly used in heavy-duty concrete mixes for large-scale construction projects. These aggregates are produced by crushing larger rocks into uniform 40mm particles, offering exceptional strength and structural integrity in concrete formulations.</p>
 
     <p>These aggregates are typically used in the construction of foundations, roads, highways, dams, and other large infrastructure projects that require high load-bearing capacity. The larger size of the 40mm aggregates ensures that the concrete mix is dense, which significantly improves its durability and long-term performance under heavy loads.</p>
 
-    <p>In addition to providing strength, 40mm aggregates play a crucial role in ensuring the stability of the structure by filling larger voids between smaller aggregates, promoting better compaction, and reducing the likelihood of cracking. Their size also helps in making the concrete mix easier to manage in large pours, improving overall workability for large-scale construction tasks.</p>`,
+    <p>In addition to providing strength, 40mm aggregates play a crucial role in ensuring the stability of the structure by filling larger voids between smaller aggregates, promoting better compaction, and reducing the likelihood of cracking. Their size also helps in making the concrete mix easier to manage in large pours, improving overall workability for large-scale construction tasks.</p>
+    </div>`,
           prd_img: '/Images/E-Mart/Aggregate/40-mm-Aggregate.jpeg',
           prd_price: '',
           prd_code: ''
@@ -148,9 +185,12 @@ export const data = {
     },
     {
       name: 'Ready Mix Concrete',
+      cat_slug:'RMC',
       products: [
         {
           prd_name: "M-15 RMC",
+          prd_slug: 'M-15-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Ideal for plain cement concrete work and non-structural applications.',
           prd_description: `<div class="rmc-description">
   <h2>M-15 Grade Ready Mix Concrete (RMC)</h2>
@@ -182,6 +222,8 @@ export const data = {
         },
         {
           prd_name: "M-20 RMC",
+          prd_slug: 'M-20-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Suitable for RCC works like slabs, beams, and columns in residential and commercial projects.',
           prd_description: ` <div class="rmc-description">
   <h2>M-20 Grade Ready Mix Concrete (RMC)</h2>
@@ -213,6 +255,8 @@ export const data = {
         },
         {
           prd_name: "M-25 RMC",
+          prd_slug: 'M-25-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Designed for reinforced concrete structures requiring superior strength and durability.',
           prd_description: `<div class="rmc-description">
   <h2>M-25 Grade Ready Mix Concrete (RMC)</h2>
@@ -244,6 +288,8 @@ export const data = {
         },
         {
           prd_name: "M-30 RMC",
+          prd_slug: 'M-30-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Engineered for heavy-duty structural applications, offering high strength, durability, and long-term performance.',
           prd_description: `<div class="rmc-description">
   <h2>M-30 Grade Ready Mix Concrete (RMC)</h2>
@@ -275,6 +321,8 @@ export const data = {
         },
         {
           prd_name: "M-35 RMC",
+          prd_slug: 'M-35-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Delivers exceptional strength and durability, ideal for high-load infrastructure like bridges, roads, and industrial structures.',
           prd_description: `<div class="rmc-description">
   <h2>M-35 Grade Ready Mix Concrete (RMC)</h2>
@@ -306,6 +354,8 @@ export const data = {
         },
         {
           prd_name: "M-40 RMC",
+          prd_slug: 'M-40-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Provides ultra-high strength and durability, perfect for critical infrastructure and high-rise construction projects.',
           prd_description: `<div class="rmc-description">
   <h2>M-40 Grade Ready Mix Concrete (RMC)</h2>
@@ -337,6 +387,8 @@ export const data = {
         },
         {
           prd_name: "M-50 RMC",
+          prd_slug: 'M-50-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'Offers superior compressive strength and durability, tailored for specialized structures like high-rise buildings, bridges, and precast elements.',
           prd_description: `<div class="rmc-description">
   <h2>M-50 Grade Ready Mix Concrete (RMC)</h2>
@@ -368,6 +420,8 @@ export const data = {
         },
         {
           prd_name: "M-60 RMC",
+          prd_slug: 'M-60-RMC',
+          prd_cat: 'RMC',
           prd_short_description: 'A high-performance concrete designed for ultra-strength applications in demanding structures like high-rise towers, bridges, and heavy-duty infrastructure.',
           prd_description: `<div class="rmc-description">
   <h2>M-60 Grade Ready Mix Concrete (RMC)</h2>
@@ -399,6 +453,8 @@ export const data = {
         },
         {
           prd_name: "Light Weight Concrete (LWC)",
+          prd_slug: 'LWC',
+          prd_cat: 'RMC',
           prd_short_description: 'Reduced density with excellent insulation and ease of handling, ideal for non-load-bearing structures and thermal/acoustic applications.',
           prd_description: `<div class="rmc-description">
   <h2>Lightweight Concrete</h2>
@@ -431,6 +487,8 @@ export const data = {
         },
         {
           prd_name: "Pavement Quality Concrete (PQC)",
+          prd_slug: 'PQC',
+          prd_cat: 'RMC',
           prd_short_description: 'A high-strength concrete mix designed for roads, pavements, and airport runways, offering excellent durability and resistance to wear and tear.',
           prd_description: `<div class="rmc-description">
   <h2>Pavement Quality Concrete (PQC)</h2>
@@ -462,6 +520,8 @@ export const data = {
         },
         {
           prd_name: "Dry Lean Concrete (DLC)",
+          prd_slug: 'DLC',
+          prd_cat: 'RMC',
           prd_short_description: 'A low-strength, cost-effective concrete mix used as a sub-base for pavements and floors, providing a strong foundation for structural layers.',
           prd_description: `<div class="rmc-description">
   <h2>Dry Lean Concrete (DLC)</h2>

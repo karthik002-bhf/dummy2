@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import { data } from '../product_data'
 import Image from 'next/image'
+import Link from 'next/link'
+import PrdCard from '@/components/PrdDetails/PrdCard'
 // import data from '../../app/product_data.js'
 
 function page() {
@@ -9,10 +11,9 @@ function page() {
     const [prd_data, setPrdData] = useState(cat_data?.[0]?.products)
     return (
         <>
-
             <div className='container-fluid'>
                 <div className='categoryBar'>
-                <h5 className='px-3 my-auto'>Categories</h5>
+                    <h5 className='px-3 my-auto'>Categories</h5>
                     {
                         cat_data?.map((e, index) => {
                             return (
@@ -22,8 +23,8 @@ function page() {
                     }
                 </div>
 
-                <div className='col-md-12 row mx-0 mt-5'>
-                    {/* <div className='col-md-2 mb-2 mb-md-0'>
+                {/* <div className='col-md-12 row mx-0 mt-5'>
+                    <div className='col-md-2 mb-2 mb-md-0'>
                         <div className='card'>
                             <div className='bg-primary p-2'><h5>Categories</h5></div>
                             {
@@ -34,27 +35,32 @@ function page() {
                                 })
                             }
                         </div>
-                    </div> */}
+                    </div>
                     <div className='col-md-'>
                         <div className='col-md-12 row mx-0'>
                             {
                                 prd_data?.map((e, index) => {
                                     return (
                                         <div key={`prd_item${index}`} className='col-md-3 px-0 px-md-2 mb-2'>
-                                            <div className='card shadow-md h-100 p-3'>
-                                                <div className='img_div'>
-                                                    <Image src={e?.prd_img} alt={`${e?.prd_name}`} fill className='img_css' />
+                                            <Link href={`/Shop/${e?.prd_cat}/${e?.prd_slug}`} className='link'>
+                                                <div className='card shadow-md h-100 p-3'>
+                                                    <div className='img_div'>
+                                                        <Image src={e?.prd_img} alt={`${e?.prd_name}`} fill className='img_css' />
+                                                    </div>
+                                                    <h5>{e?.prd_name}</h5>
+                                                    {e?.prd_dimensions && <div className='font12'>Dimensions : {e?.prd_dimensions}</div>}
+                                                    <div className=''>{e?.prd_short_description}</div>
                                                 </div>
-                                                <h5>{e?.prd_name}</h5>
-                                                {e?.prd_dimensions && <div className='font12'>Dimensions : {e?.prd_dimensions}</div>}
-                                                <div className=''>{e?.prd_short_description}</div>
-                                            </div>
+                                            </Link>
                                         </div>
                                     )
                                 })
                             }
                         </div>
                     </div>
+                </div> */}
+                <div>
+                    <PrdCard prd_data={prd_data} />
                 </div>
             </div>
         </>
