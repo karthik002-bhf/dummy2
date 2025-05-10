@@ -1,8 +1,11 @@
+'use client'
+import dynamic from 'next/dynamic'
 import React from 'react'
 import PrdImgs from './PrdImgs'
 import PrdDetails from './PrdDetails'
 import PrdCard from './PrdCard'
-import MultiCarousel from '../MultiCarousel'
+// import MultiCarousel from '../MultiCarousel'
+const MultiCarousel = dynamic(() => import('../MultiCarousel'), { ssr: false })
 
 function Prd({ data, prdSuggest }) {
     return (
