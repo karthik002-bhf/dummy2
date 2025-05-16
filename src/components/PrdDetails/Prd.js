@@ -21,11 +21,13 @@ function Prd({ data, prdSuggest }) {
             <div className='my-5'>
                 <h5>Suggested Products</h5>
                 {
-                    prdSuggest.length < 5
-                        ?
-                        <PrdCard prd_data={prdSuggest} detail_page={true} />
-                        :
-                        <MultiCarousel prd_data={prdSuggest} />
+                    prdSuggest
+                        ? prdSuggest?.length < 5
+                            ?
+                            <PrdCard prd_data={prdSuggest} detail_page={true} />
+                            :
+                            <MultiCarousel prd_data={prdSuggest} />
+                        : ''
                 }
             </div>
         </div>

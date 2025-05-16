@@ -1,24 +1,18 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import { data } from '../product_data'
-import Image from 'next/image'
-import Link from 'next/link'
-import PrdCard from '@/components/PrdDetails/PrdCard'
-import { useSearchParams } from 'next/navigation'
+import React, { Suspense } from 'react'
+import ShopPrd from './ShopPrd'
+// import { useSearchParams } from 'next/navigation';
 
 function page() {
-    const searchParams = useSearchParams();
-    const [index, setIndex] = useState(0);
+    // const searchParams = useSearchParams();
 
-    const cat_data = data?.category
-    const [prd_data, setPrdData] = useState(cat_data?.[0]?.products)
-    useEffect(() => {
-        const idx = searchParams.get('index');
-        if (idx) {
-            setIndex(idx);
-            setPrdData(cat_data?.[parseInt(idx)]?.products)
-        }
-    }, [searchParams])
+    // const cat_data = data?.category
+    // const [prd_data, setPrdData] = useState(cat_data?.[0]?.products)
+    // useEffect(() => {
+    //     const idx = searchParams.get('index');
+    //     if (idx) {
+    //         setPrdData(cat_data?.[parseInt(idx)]?.products)
+    //     }
+    // }, [searchParams])
     return (
         <>
             <div className='container-fluid'>
@@ -70,7 +64,10 @@ function page() {
                     </div>
                 </div> */}
                 <div>
-                    <PrdCard prd_data={prd_data} />
+                    <Suspense fallback={<p>Loading shop content...</p>}>
+                        <ShopPrd />
+                    </Suspense>
+                    {/* <PrdCard prd_data={prd_data} /> */}
                 </div>
             </div>
         </>
