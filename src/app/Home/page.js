@@ -24,8 +24,8 @@ function HomePage() {
                     <div className='col-md-12 row mx-0 d-flex justify-content-between'>
                         <div className='col-md-4 bg-white p-1'>
                             <div className='m-1 shadow-md rounded text-center'>
-                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
-                                    <Image src={"/Images/Home/Residential_homes.jpeg"} alt='Residential_homes' layout='fill' className='img-fluid ' />
+                                <div className='img_div'>
+                                    <Image src={"/Images/Home/Residential_homes.jpeg"} alt='Residential_homes' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 </div>
                                 <h2>Residential</h2>
                                 <p>We build custom homes that reflect your style and needs.</p>
@@ -33,8 +33,8 @@ function HomePage() {
                         </div>
                         <div className='col-md-4 col-md-3 bg-white p-1'>
                             <div className='m-1 shadow-md rounded text-center'>
-                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
-                                    <Image src={"/Images/Home/Commercial_office.jpeg"} alt='Commercial_office' layout='fill' className='img-fluid ' />
+                                <div className='img_div'>
+                                    <Image src={"/Images/Home/Commercial_office.jpeg"} alt='Commercial_office' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 </div>
                                 <h2>Commercial</h2>
                                 <p>We provide construction services for offices, retail spaces, and more.</p>
@@ -42,8 +42,8 @@ function HomePage() {
                         </div>
                         <div className='col-md-4 col-md-3 bg-white p-1'>
                             <div className='m-1 shadow-md rounded text-center'>
-                                <div className='position-relative' style={{ height: '350px', width: '100%' }}>
-                                    <Image src={"/Images/Home/Industrial.jpeg"} alt='Industrial' layout='fill' className='img-fluid ' />
+                                <div className='img_div'>
+                                    <Image src={"/Images/Home/Industrial.jpeg"} alt='Industrial' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 </div>
                                 <h2>Industrial</h2>
                                 <p>We handle large-scale industrial projects with precision and expertise.</p>
@@ -55,20 +55,20 @@ function HomePage() {
                     <h1>Our Projects</h1>
                     <div className='col-md-12 row mx-0 d-flex justify-content-between'>
                         <div className='col-md-4 text-center'>
-                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
-                                <Image src={"/Images/Home/Modern_Office_Building.jpeg"} alt='Modern_Office_Building' layout='fill' className='img-fluid ' />
+                            <div className='img_div'>
+                                <Image src={"/Images/Home/Modern_Office_Building.jpeg"} alt='Modern_Office_Building' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
                             <h4>Modern Office Building</h4>
                         </div>
                         <div className='col-md-4 text-center'>
-                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
-                                <Image src={"/Images/Home/Luxury_Villa.jpeg"} alt='Luxury_Villa' layout='fill' className='img-fluid ' />
+                            <div className='img_div'>
+                                <Image src={"/Images/Home/Luxury_Villa.jpeg"} alt='Luxury_Villa' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
                             <h4>Luxury Villa</h4>
                         </div>
                         <div className='col-md-4 text-center'>
-                            <div className='position-relative m-2' style={{ height: '350px', width: '100%' }}>
-                                <Image src={"/Images/Home/Industrial_Complex.jpeg"} alt='Industrial_Complex' layout='fill' className='img-fluid ' />
+                            <div className='img_div'>
+                                <Image src={"/Images/Home/Industrial_Complex.jpeg"} alt='Industrial_Complex' fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
                             <h4>Industrial Complex</h4>
                         </div>

@@ -1,18 +1,28 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { data } from '../product_data'
 import Image from 'next/image'
 import Link from 'next/link'
 import PrdCard from '@/components/PrdDetails/PrdCard'
-// import data from '../../app/product_data.js'
+import { useSearchParams } from 'next/navigation'
 
 function page() {
+    const searchParams = useSearchParams();
+    const [index, setIndex] = useState(0);
+
     const cat_data = data?.category
     const [prd_data, setPrdData] = useState(cat_data?.[0]?.products)
+    useEffect(() => {
+        const idx = searchParams.get('index');
+        if (idx) {
+            setIndex(idx);
+            setPrdData(cat_data?.[parseInt(idx)]?.products)
+        }
+    }, [searchParams])
     return (
         <>
             <div className='container-fluid'>
-                <div className='categoryBar'>
+                {/* <div className='categoryBar'>
                     <h5 className='px-3 my-auto'>Categories</h5>
                     {
                         cat_data?.map((e, index) => {
@@ -21,7 +31,7 @@ function page() {
                             )
                         })
                     }
-                </div>
+                </div> */}
 
                 {/* <div className='col-md-12 row mx-0 mt-5'>
                     <div className='col-md-2 mb-2 mb-md-0'>

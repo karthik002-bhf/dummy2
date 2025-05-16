@@ -12,7 +12,7 @@ function DesignBuildTemplate({ data }) {
       <div className="row mb-5">
         <div className="col-md-6 my-auto">
           <div className='shadow-lg rounded-lg my-2 my-md-0 img_div'>
-            <Image src={data?.mainImage} alt="Feature Image" fill className='img_css' />
+            <Image src={data?.mainImage} alt="Feature Image" fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
           {/* <div style={{ height: '400px', overflow: 'hidden' }} className=" shadow-lg">
             <img
