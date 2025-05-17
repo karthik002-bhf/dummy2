@@ -7,7 +7,9 @@ function ShopNav() {
     return (
         <div>
             <div className='categoryBar mb-2'>
-                <h5 className='px-3 my-auto'>Categories</h5>
+                {/* <h5 className='px-3 my-auto'><Link href='/Shop' className='text-decoration-none text-black font24'>Categories :-</Link></h5> */}
+                <Link href='/Shop' className='footer_link'><div className='categoryItem'>All Products</div></Link>
+
                 {
                     cat_data?.map((e, index) => {
                         return (
@@ -19,7 +21,7 @@ function ShopNav() {
                                 className='footer_link'
                                 key={`category-${index}`}
                             >
-                                <div className=' categoryItem'>
+                                <div className='categoryItem'>
                                     {e?.name}
                                 </div>
                             </Link>

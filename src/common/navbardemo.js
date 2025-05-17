@@ -1,4 +1,7 @@
 'use client'
+import AuthModal from '@/app/Auth/LoginSignup';
+import Logout from '@/app/Auth/Logout';
+import Cookies from 'js-cookie';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
@@ -6,6 +9,13 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 function NavbarDemo() {
   // const [isMobile, setIsMobile] = useState(false);
   const [expanded, setExpanded] = useState(false);
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = Cookies.get('auth_token');
+    setIsLoggedIn(!!token);
+  }, []);
 
   // useEffect(() => {
   //   if (typeof window !== 'undefined') {
@@ -17,6 +27,17 @@ function NavbarDemo() {
   //     return () => window.removeEventListener('resize', handleResize);
   //   }
   // }, []);
+
+
+  // const handleAuthClick = ()=>{
+  //   if (Cookies.get('auth_token')) {
+  //     Cookies.remove('auth_token', { path: '/' });
+  //     setExpanded(false);
+  //     window.location.href = '/';
+  //   } else {
+  //     // window.location.href = '/';
+  //   }
+  // }
 
 
 
@@ -34,17 +55,17 @@ function NavbarDemo() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className='d-lg-flex justify-content-sm-end text-sm-end'>
           <Nav className="my-1 my-lg-0 ">
-            <Nav.Link className='nav_link fw-bold' href="/Shop">Shop</Nav.Link>
-            <NavDropdown title="E-Mart" id="E-Mart" className="nav_link  hover-dropdown fw-bold dropdown_css px-md-1">
-              {/* <NavDropdown.Item href="/Tiles" className='' onClick={() => setExpanded(false)}>Tiles</NavDropdown.Item> */}
-              {/* <NavDropdown.Item href="/Plumbing" className='' onClick={() => setExpanded(false)}>Plumbing</NavDropdown.Item> */}
-              {/* <NavDropdown.Item href="/Sanitary" className='' onClick={() => setExpanded(false)}>Sanitary</NavDropdown.Item> */}
-              {/* <NavDropdown.Item href="/Cement" className='' onClick={() => setExpanded(false)}>Cement </NavDropdown.Item> */}
-              {/* <NavDropdown.Item href="/Steel" className='' onClick={() => setExpanded(false)}>Steel</NavDropdown.Item> */}
+            <Nav.Link className='nav_link fw-bold' href="/Shop">E-mart</Nav.Link>
+            {/* <NavDropdown title="E-Mart" id="E-Mart" className="nav_link  hover-dropdown fw-bold dropdown_css px-md-1">
+              <NavDropdown.Item href="/Tiles" className='' onClick={() => setExpanded(false)}>Tiles</NavDropdown.Item>
+              <NavDropdown.Item href="/Plumbing" className='' onClick={() => setExpanded(false)}>Plumbing</NavDropdown.Item>
+              <NavDropdown.Item href="/Sanitary" className='' onClick={() => setExpanded(false)}>Sanitary</NavDropdown.Item>
+              <NavDropdown.Item href="/Cement" className='' onClick={() => setExpanded(false)}>Cement </NavDropdown.Item>
+              <NavDropdown.Item href="/Steel" className='' onClick={() => setExpanded(false)}>Steel</NavDropdown.Item>
               <NavDropdown.Item href="/Blocks" className='' onClick={() => setExpanded(false)}>Blocks </NavDropdown.Item>
               <NavDropdown.Item href="/Construction Chemical" className='' onClick={() => setExpanded(false)}> Construction Chemicals</NavDropdown.Item>
               <NavDropdown.Item href="/Aggregates" className='' onClick={() => setExpanded(false)}> Aggregates </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
 
             <Nav.Link className=' hover-dropdown fw-bold px-md-1 text-sm-end' href="/DesignBuild" onClick={() => setExpanded(false)}>Design Build</Nav.Link>
 
@@ -65,6 +86,14 @@ function NavbarDemo() {
             </NavDropdown>
             {/* <Nav.Link className='nav_link fw-bold' href="#action6">Contract & Other Services</Nav.Link> */}
             <Nav.Link className='nav_link fw-bold px-md-1 text-sm-end my-auto' href="/" onClick={() => setExpanded(false)}>Contact</Nav.Link>
+            {/* {
+              Cookies.get('auth_token') ?
+                <Nav.Link className='nav_link fw-bold px-md-1 text-sm-end my-auto' href="/Logout" onClick={() => setExpanded(false)}>Logout</Nav.Link>
+                :
+                <Nav.Link className='nav_link fw-bold px-md-1 text-sm-end my-auto' href="/Login" onClick={() => setExpanded(false)}>Login</Nav.Link>
+            } */}
+            {/* <Nav.Link className='nav_link fw-bold px-md-1 text-sm-end my-auto' href={Cookies.get('auth_token') ? '/Logout' : '/Login'} onClick={() => setExpanded(false)}>{Cookies.get('auth_token') ? 'Logout' : 'Login'}</Nav.Link> */}
+            <Nav.Item className='nav_link fw-bold px-md-1 text-sm-end my-auto cp' /*onClick={handleAuthClick} */ >{isLoggedIn ? <Logout /> : <AuthModal />}</Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

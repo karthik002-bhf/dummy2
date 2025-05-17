@@ -24,7 +24,7 @@ function Prd({ data, prdSuggest }) {
                     prdSuggest
                         ? prdSuggest?.length < 5
                             ?
-                            <PrdCard prd_data={prdSuggest} detail_page={true} />
+                            <PrdCard prd_data={prdSuggest} detail_page={true} catSelected={true} />
                             :
                             <MultiCarousel prd_data={prdSuggest} />
                         : ''

@@ -2,8 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "@/common/Footer";
-import DemoNav from "@/common/demoNav";
 import NavWrapper from "@/common/NavWrapper";
+import { AuthProvider } from "./context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,11 +30,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavWrapper />
-        {/* <DemoNav /> */}
-        <div className="min-h-screen">
-          {children}
-        </div>
+        <AuthProvider>
+          <NavWrapper />
+          <div className="min-h-screen">
+            {children}
+          </div>
+        </AuthProvider>
         <footer>
           <Footer />
         </footer>
