@@ -16,6 +16,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 import DrawIcon from '@mui/icons-material/Draw';
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
@@ -23,7 +24,14 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import { Button } from 'react-bootstrap';
 
 function page() {
+    const service_description = "Comprehensive Design Solutions for your dream home to achieve best living spaces.";
     const services = [
+        {
+            title: "Site Inspection",
+            description: "Site inspection is a crucial step in the construction process that involves a detailed evaluation of the work being carried out on-site. It ensures that all activities align with the approved plans, specifications, safety regulations, and quality standards.",
+            icon: <ArchitectureIcon fontSize="large" color="primary" />,
+            img: "/Images/DesignServices/Site_inspection.png",
+        },
         {
             title: "Architecture",
             description: "We offer complete architectural design solutions that balance innovation, sustainability, and functionality. Our team collaborates closely with you to bring your vision to life, from concept to construction drawings.",
@@ -37,6 +45,12 @@ function page() {
             img: "/Images/DesignServices/2D_plan_pixabay.jpg",
         },
         {
+            title: "Vastu Support",
+            description: "For clients seeking harmony and positive energy, we offer Vastu-compliant design support. We incorporate Vastu principles into modern layouts without compromising style or functionality.",
+            icon: <SelfImprovementIcon fontSize="large" color="primary" />,
+            img: "/Images/DesignServices/vastu_support_gemini.png",
+        },
+        {
             title: "3D Elevations",
             description: "We create stunning 3D elevation designs that give a realistic view of your project before execution, helping you visualize aesthetics, materials, and structures.",
             icon: <ThreeDRotationIcon fontSize="large" color="primary" />,
@@ -47,12 +61,6 @@ function page() {
             description: "Our structural design services ensure your building’s safety, strength, and longevity. We integrate engineering principles to deliver solid foundations, frameworks, and support systems.",
             icon: <EngineeringIcon fontSize="large" color="primary" />,
             img: "/Images/DesignServices/structural_design_gemini.png",
-        },
-        {
-            title: "Vastu Support",
-            description: "For clients seeking harmony and positive energy, we offer Vastu-compliant design support. We incorporate Vastu principles into modern layouts without compromising style or functionality.",
-            icon: <SelfImprovementIcon fontSize="large" color="primary" />,
-            img: "/Images/DesignServices/vastu_support_gemini.png",
         },
     ];
 
@@ -84,7 +92,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />,
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];
@@ -154,12 +163,12 @@ function page() {
                         href="#contact"
                         className=' py-2 my-2 font20' style={{ zIndex: 1, backgroundColor: '#b13fbc', color: '#fff', border: 'none' }}
                     >
-                        Get a Free Consultation
+                        Contact Us
                     </Button>
                 </div>
             </div>
             <div className='container'>
-                <ServicesSection services={services} />
+                <ServicesSection services={services} service_description={service_description} />
                 <WhyChooseUs features={features} />
                 <ProcessSection steps={steps} />
                 <PricingSection pricingData={pricingData} />

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from 'react-bootstrap';
 
-function ServicesSection({ services }) {
+function ServicesSection({ services, service_description }) {
 
   return (
     <div>
@@ -18,7 +18,10 @@ function ServicesSection({ services }) {
       </div>
       <h1 className='text-center'>Our Services</h1>
       <div className='text-center mb-3'>
-        Comprehensive solutions tailored to your structural repair and renovation needs
+        {
+          service_description ? service_description : 'Comprehensive solutions tailored to your structural repair and renovation needs.'
+        }
+        
       </div>
       <div className='d-flex justify-content-center mb-4'>
         {/* <Button

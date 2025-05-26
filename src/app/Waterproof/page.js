@@ -11,6 +11,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 import { ContactMailOutlined, HomeRepairServiceOutlined, ReceiptOutlined, ConstructionOutlined, TaskOutlined, AssignmentTurnedInOutlined } from '@mui/icons-material';
 
@@ -72,7 +73,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />,
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];
@@ -106,22 +108,22 @@ function page() {
 
     const pricingData = [
         {
-          service: "Acrylic Cementitious Solutions",
-          price: "₹45 - ₹85",
+            service: "Acrylic Cementitious Solutions",
+            price: "₹45 - ₹85",
         },
         {
-          service: "Polyurethane Solutions",
-          price: "₹55 - ₹110",
+            service: "Polyurethane Solutions",
+            price: "₹55 - ₹110",
         },
         {
-          service: "Elastomeric & Food Grade Coating Services",
-          price: "₹65 - ₹125",
+            service: "Elastomeric & Food Grade Coating Services",
+            price: "₹65 - ₹125",
         },
         {
-          service: "Grouting Services",
-          price: "₹35 - ₹75",
+            service: "Grouting Services",
+            price: "₹35 - ₹75",
         }
-      ];
+    ];
     return (
         <div className=''>
             {/* <HeroSection /> */}

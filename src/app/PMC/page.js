@@ -10,6 +10,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 import {
     LocationOn as LocationOnIcon,
@@ -19,9 +20,19 @@ import {
     Chat as ChatIcon,
     Description as DescriptionIcon
 } from '@mui/icons-material';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
+import PublishedWithChangesIcon from '@mui/icons-material/PublishedWithChanges';
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
+
+
+
+
+
 
 
 function page() {
+    const service_description = "Our Engineering professionalism safeguarding your transition from dream home to reality.";
     const services = [
         {
             title: "Project Planning & Management",
@@ -30,16 +41,16 @@ function page() {
             img: "/Images/Pmc/project_plan_management.jpg",
         },
         {
-            title: "Construction Management",
-            description: "Our construction management service ensures on-site coordination, contractor supervision, and compliance with safety and quality standards. We act as your trusted partner, ensuring each phase of construction is executed efficiently and transparently.",
-            icon: <Build fontSize="large" color="primary" />,
-            img: "/Images/Pmc/construction_mgmt.jpg",
-        },
-        {
             title: "Cost Consultancy & Quantity Survey",
             description: "We provide accurate cost estimation, budgeting, and quantity surveying to help you plan your finances wisely. Our team ensures that every rupee spent is accounted for, helping you avoid overruns and unexpected costs.",
             icon: <Calculate fontSize="large" color="primary" />,
             img: "/Images/Pmc/cost_consultancy_freepik.jpg",
+        },
+        {
+            title: "Construction Management",
+            description: "Our construction management service ensures on-site coordination, contractor supervision, and compliance with safety and quality standards. We act as your trusted partner, ensuring each phase of construction is executed efficiently and transparently.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/Pmc/construction_mgmt.jpg",
         },
         {
             title: "Quality Audits",
@@ -96,12 +107,20 @@ function page() {
             icon: <GroupWorkIcon />,             // Represents team collaboration
         },
         {
-            label: 'Reporting & Communication',
+            label: 'Consulting & Reporting',
             icon: <ChatIcon />,                  // Represents communication
         },
         {
             label: 'Final Review & Documentation',
             icon: <DescriptionIcon />,           // Represents documentation
+        },
+        {
+            label: 'Project Handing-Over',
+            icon: 
+            // <AssignmentTurnedInIcon fontSize="small" />
+            // <PublishedWithChangesIcon fontSize="small" />
+            // <ForwardToInboxIcon fontSize="small" />
+            <HandshakeIcon />,           // Represents documentation
         }
     ];
 
@@ -133,7 +152,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />,
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];
@@ -148,7 +168,7 @@ function page() {
                 </div>
             </div>
             <div className='container'>
-                <ServicesSection services={services} />
+                <ServicesSection services={services} service_description={service_description} />
                 <WhyChooseUs features={features} />
                 <ProcessSection steps={steps} />
                 <PricingSection pricingData={pricingData} />

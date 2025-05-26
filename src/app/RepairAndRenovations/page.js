@@ -13,6 +13,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
@@ -76,7 +77,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />,
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];

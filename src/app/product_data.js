@@ -9,7 +9,7 @@ export const data = {
           "prd_slug": '4-inch-block',
           "prd_cat": 'blocks',
           "prd_dimensions": '100mm x 200mm x 400mm',
-          "prd_short_description": 'Ideal for partition walls and lightweight applications',
+          "prd_short_description": 'Partition Walls | Extensions | Cantilever | Lightweight blocks | Curved Edges.',
           "prd_description": `<p>
     Solid concrete blocks are an excellent choice for building partition walls and other lightweight construction applications. 
     Designed for non-load-bearing structures, these blocks offer the perfect balance of strength, durability, and reduced weight. 
@@ -30,7 +30,7 @@ export const data = {
           "prd_slug": '6-inch-block',
           "prd_cat": 'blocks',
           "prd_dimensions": '150mm x 200mm x 400mm',
-          "prd_short_description": 'A perfect balance of strength and weight.',
+          "prd_short_description": 'Strong Walls | Good Weight | Partitions | Curved Edges.',
           "prd_description": ` <div>
           <p>
     Solid concrete blocks are engineered to provide the ideal combination of structural strength and manageable weight, 
@@ -53,7 +53,7 @@ export const data = {
           "prd_slug": '8-inch-block',
           "prd_cat": 'blocks',
           "prd_dimensions": '200mm x 200mm x 400mm',
-          "prd_short_description": 'Best suited for load-bearing walls.',
+          "prd_short_description": 'Load Bearing Walls | Heavy Duty Walls | Curved Edges.',
           "prd_description": `<div>
           <p>
     Solid concrete blocks are highly recommended for load-bearing walls due to their exceptional compressive strength and structural integrity. 
@@ -82,10 +82,10 @@ export const data = {
       "cat_slug":'sand',
       "products": [
         {
-          "prd_name": "p-Sand",
-          "prd_slug": 'p-sand',
+          "prd_name": "P-Sand",
+          "prd_slug": 'P-sand',
           "prd_cat": 'sand',
-          "prd_short_description": 'M Sand for plastering is a finely crushed, high-quality sand that ensures smooth finishes, better bonding, and durability in plastering applications.',
+          "prd_short_description": ' Plastering Grade Sand | Good Bond Strength | Washed | Fineness | Durability | Quality.',
           "prd_description": `<div>
           <p><strong>M Sand for plastering</strong> is a specially manufactured sand that is produced by crushing hard granite stones or rocks. It is engineered to have uniform particle size and smooth texture, which makes it ideal for plastering applications. Unlike natural river sand, M Sand is free from impurities such as clay, silt, and organic materials, ensuring a clean and consistent product. This quality enhances the bonding strength between the plaster and the surface, resulting in a stronger, more durable finish.</p>
 
@@ -96,10 +96,10 @@ export const data = {
           "prd_code": ''
         },
         {
-          "prd_name": "c-Sand",
-          "prd_slug": 'c-sand',
+          "prd_name": "C-Sand",
+          "prd_slug": 'C-sand',
           "prd_cat": 'sand',
-          "prd_short_description": 'M Sand for concrete mix is a high-quality, finely graded sand that enhances the strength, durability, and workability of concrete while ensuring a consistent and reliable mix.',
+          "prd_short_description": 'Construction Grade Sand | Well-Graded | Good Bond Strength | Washed | Fineness | Durability | Quality.',
           "prd_description": `<div>
           <p><strong>M Sand for concrete mix</strong> is a specially manufactured sand created by crushing hard granite rocks. It is designed to have a consistent particle size and uniform texture, making it an ideal material for use in concrete mixes. Unlike natural river sand, M Sand is free from impurities like clay, silt, and organic matter, ensuring that it doesn't compromise the quality of the concrete.</p>
 
@@ -121,7 +121,7 @@ export const data = {
           "prd_name": "6mm Aggregates",
           "prd_slug": '6mm-aggregates',
           "prd_cat": 'aggregates',
-          "prd_short_description": 'Small, finely graded stones used in concrete mixes to improve workability and provide better bonding and strength in construction applications.',
+          "prd_short_description": 'Well Graded Stones | Cubical | Blending.',
           "prd_description": `<div>
           <p><strong>6mm size aggregates</strong> are finely graded, small-sized stones commonly used in various construction applications. These aggregates are typically made by crushing larger stones into smaller particles, with a uniform size of 6mm. They play an essential role in enhancing the quality and durability of concrete and mortar mixes.</p>
 
@@ -137,7 +137,7 @@ export const data = {
           "prd_name": "12mm Aggregates",
           "prd_slug": '12mm-aggregates',
           "prd_cat": 'aggregates',
-          "prd_short_description": 'Medium-sized stones used in concrete mixes to enhance strength, improve workability, and provide a balanced structure in construction applications.',
+          "prd_short_description": '10mm/12mm : Well Graded Stones | Cubical | Good Impact Resistance | High Abrasion Resistance | Blending.',
           "prd_description": `<div>
           <p><strong>12mm size aggregates</strong> are medium-sized stones commonly used in construction projects, particularly in concrete mixes. These aggregates are typically produced by crushing larger stones into uniform pieces with a size of 12mm, making them ideal for creating strong and durable concrete structures.</p>
 
@@ -153,7 +153,7 @@ export const data = {
           "prd_name": "20mm Aggregates",
           "prd_slug": '20mm-aggregates',
           "prd_cat": 'aggregates',
-          "prd_short_description": 'larger stones used in concrete mixes to provide structural strength, enhance durability, and improve the overall load-bearing capacity of construction projects.',
+          "prd_short_description": 'Well Graded Stones | Cubical | Good Impact Resistance | High Abrasion Resistance | Blending.',
           "prd_description": `<div>
           <p><strong>20mm size aggregates</strong> are large-sized stones commonly used in construction for making concrete mixes, especially in applications that require high strength and load-bearing capacity. These aggregates are produced by crushing larger rocks into uniform 20mm particles, providing the perfect balance between strength and stability.</p>
 
@@ -169,7 +169,7 @@ export const data = {
           "prd_name": "40mm Aggregates",
           "prd_slug": '40-aggregates',
           "prd_cat": 'aggregates',
-          "prd_short_description": 'large stones used in concrete mixes to provide superior strength, enhance durability, and support heavy structural loads in large-scale construction projects.',
+          "prd_short_description": 'Aggregate for Mass Concreting | Plum Concrete Aggregate | PCC | Soling.',
           "prd_description": `<div>
           <p><strong>40mm size aggregates</strong> are large-sized stones commonly used in heavy-duty concrete mixes for large-scale construction projects. These aggregates are produced by crushing larger rocks into uniform 40mm particles, offering exceptional strength and structural integrity in concrete formulations.</p>
 
@@ -191,7 +191,7 @@ export const data = {
           "prd_name": "M-15 RMC",
           "prd_slug": 'M-15-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Ideal for plain cement concrete work and non-structural applications.',
+          "prd_short_description": 'PCC | Non-Structural | Sub-Base Preparation.',
           "prd_description": `<div class="rmc-description">
   <h2>M-15 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -224,7 +224,7 @@ export const data = {
           "prd_name": "M-20 RMC",
           "prd_slug": 'M-20-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Suitable for RCC works like slabs, beams, and columns in residential and commercial projects.',
+          "prd_short_description": 'RCC | Slabs | Beams | Columns | Footings | Residential Projects.',
           "prd_description": ` <div class="rmc-description">
   <h2>M-20 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -257,7 +257,7 @@ export const data = {
           "prd_name": "M-25 RMC",
           "prd_slug": 'M-25-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Designed for reinforced concrete structures requiring superior strength and durability.',
+          "prd_short_description": 'RCC | Slabs | Beams | Columns | Footings | Residentials | Commercials Projects.',
           "prd_description": `<div class="rmc-description">
   <h2>M-25 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -290,7 +290,7 @@ export const data = {
           "prd_name": "M-30 RMC",
           "prd_slug": 'M-30-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Engineered for heavy-duty structural applications, offering high strength, durability, and long-term performance.',
+          "prd_short_description": 'High Strength | RCC | Slabs | Beams | Columns | Footings | Residentials | Commercials | Industrial.',
           "prd_description": `<div class="rmc-description">
   <h2>M-30 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -323,7 +323,7 @@ export const data = {
           "prd_name": "M-35 RMC",
           "prd_slug": 'M-35-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Delivers exceptional strength and durability, ideal for high-load infrastructure like bridges, roads, and industrial structures.',
+          "prd_short_description": 'High Strength | RCC | Slabs | Beams | Columns | Footings | Residentials | Commercials | Industrial.',
           "prd_description": `<div class="rmc-description">
   <h2>M-35 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -356,7 +356,7 @@ export const data = {
           "prd_name": "M-40 RMC",
           "prd_slug": 'M-40-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Provides ultra-high strength and durability, perfect for critical infrastructure and high-rise construction projects.',
+          "prd_short_description": 'Ultra High Strength | RCC | Columns | Raft | Commercials Projects | Industrial.',
           "prd_description": `<div class="rmc-description">
   <h2>M-40 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -389,7 +389,7 @@ export const data = {
           "prd_name": "M-50 RMC",
           "prd_slug": 'M-50-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Offers superior compressive strength and durability, tailored for specialized structures like high-rise buildings, bridges, and precast elements.',
+          "prd_short_description": 'Ultra High Strength | RCC | Columns | Commercials Projects | Industrial.',
           "prd_description": `<div class="rmc-description">
   <h2>M-50 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -422,7 +422,7 @@ export const data = {
           "prd_name": "M-60 RMC",
           "prd_slug": 'M-60-RMC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'A high-performance concrete designed for ultra-strength applications in demanding structures like high-rise towers, bridges, and heavy-duty infrastructure.',
+          "prd_short_description": 'Superior Strength | Ultra High Strength | RCC | Precasts | Commercials Projects | Industrial.',
           "prd_description": `<div class="rmc-description">
   <h2>M-60 Grade Ready Mix Concrete (RMC)</h2>
   <p>
@@ -455,7 +455,7 @@ export const data = {
           "prd_name": "Light Weight Concrete (LWC)",
           "prd_slug": 'LWC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'Reduced density with excellent insulation and ease of handling, ideal for non-load-bearing structures and thermal/acoustic applications.',
+          "prd_short_description": 'Light Weight | Low Density | High Strength | Cantilever Slabs.',
           "prd_description": `<div class="rmc-description">
   <h2>Lightweight Concrete</h2>
   <p>
@@ -489,7 +489,7 @@ export const data = {
           "prd_name": "Pavement Quality Concrete (PQC)",
           "prd_slug": 'PQC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'A high-strength concrete mix designed for roads, pavements, and airport runways, offering excellent durability and resistance to wear and tear.',
+          "prd_short_description": 'Pavement Concrete | High Strength Concrete | Roads.',
           "prd_description": `<div class="rmc-description">
   <h2>Pavement Quality Concrete (PQC)</h2>
   <p>
@@ -522,7 +522,7 @@ export const data = {
           "prd_name": "Dry Lean Concrete (DLC)",
           "prd_slug": 'DLC',
           "prd_cat": 'RMC',
-          "prd_short_description": 'A low-strength, cost-effective concrete mix used as a sub-base for pavements and floors, providing a strong foundation for structural layers.',
+          "prd_short_description": 'Pavement Concrete | Sub-Base Concrete | PCC | Roads.',
           "prd_description": `<div class="rmc-description">
   <h2>Dry Lean Concrete (DLC)</h2>
   <p>

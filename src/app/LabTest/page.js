@@ -11,6 +11,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import ScienceIcon from '@mui/icons-material/Science';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
@@ -18,18 +19,62 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 function page() {
+    // Add Soil, Water, Steel, Concrete, Blocks, Bricks, Wood, Flooring Materials, Paints
+    const service_description = "We offer best support in Testing of Building Materials as per Industry Standards and Codes.";
     const services = [
         {
-            title: "Building Materials Testing",
-            description: "We provide comprehensive testing of construction materials including cement, concrete, aggregates, steel, bricks, and more. Our certified laboratory ensures compliance with national and international standards to guarantee quality, strength, and durability.",
+            title: "Soil Testing",
+            description: "We provide comprehensive testing of soil materials to determine their physical and chemical properties. Our tests include soil classification, compaction, moisture content, and more to ensure your construction project is built on a solid foundation.",
             icon: <Build fontSize="large" color="primary" />,
-            img: "/Images/LabTest/lab_testing_building_material.png",
+            img: "/Images/LabTest/lab_testing_soil.png",
         },
         {
-            title: "Soil & Water Testing",
-            description: "Our soil and water testing services help assess the suitability of your site for construction and ensure safe water quality. Tests include soil bearing capacity, composition, contamination levels, pH balance, and water potability for domestic or industrial use.",
+            title: "Water Testing",
+            description: "We provide comprehensive testing of water quality to ensure it meets safety and regulatory standards. Our tests include chemical analysis, microbiological testing, and physical assessments to guarantee safe drinking water and compliance with environmental regulations.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_water.png",
+        },
+        {
+            title: "Steel Testing",
+            description: "We provide comprehensive testing of steel materials to determine their physical and chemical properties. Our tests include tensile strength, yield strength, and chemical composition analysis to ensure your construction project is built on a solid foundation.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_steel.png",
+        },
+        {
+            title: "Concrete Testing",
+            description: "We provide comprehensive testing of concrete materials to determine their physical and chemical properties. Our tests include compressive strength, flexural strength, and chemical composition analysis to ensure your construction project is built on a solid foundation.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_concrete.png",
+        },
+        {
+            title: "Blocks Testing",
+            description: "We provide comprehensive testing of block materials to determine their physical and chemical properties. Our tests include compressive strength, water absorption, and dimensional accuracy to ensure your construction project is built on a solid foundation.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_blocks.png",
+        },
+        {
+            title: "Bricks Testing",
+            description: "We provide comprehensive testing of brick materials to determine their physical and chemical properties. Our tests include compressive strength, water absorption, and dimensional accuracy to ensure your construction project is built on a solid foundation.",
+            icon: <Build fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_bricks.png",
+        },
+        {
+            title: "Wood Testing",
+            description: "We provide comprehensive testing of wood materials to determine their physical and chemical properties. Our tests include moisture content, density, and chemical composition analysis to ensure your construction project is built on a solid foundation.",
             icon: <Terrain fontSize="large" color="primary" />,
-            img: "/Images/LabTest/lab_testing_soil_water.png",
+            img: "/Images/LabTest/lab_testing_wood.png",
+        },
+        {
+            title: "Flooring Materials Testing",
+            description: "We provide comprehensive testing of flooring materials to determine their physical and chemical properties. Our tests include moisture content, density, and chemical composition analysis to ensure your construction project is built on a solid foundation.",
+            icon: <Terrain fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_flooring.png",
+        },
+        {
+            title: "Paints Testing",
+            description: "We provide comprehensive testing of paints and coatings to determine their physical and chemical properties. Our tests include adhesion, hardness, and chemical resistance analysis to ensure your construction project is built on a solid foundation.",
+            icon: <Terrain fontSize="large" color="primary" />,
+            img: "/Images/LabTest/lab_testing_paints.png",
         },
     ];
 
@@ -61,7 +106,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];
@@ -110,7 +156,7 @@ function page() {
                 </div>
             </div>
             <div className='container'>
-                <ServicesSection services={services} />
+                <ServicesSection services={services} service_description={service_description} />
                 <WhyChooseUs features={features} />
                 <ProcessSection steps={steps} />
                 <PricingSection pricingData={pricingData} />

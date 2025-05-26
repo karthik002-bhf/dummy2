@@ -14,10 +14,17 @@ import PeopleIcon from '@mui/icons-material/People';
 import BuildIcon from '@mui/icons-material/Build';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 function page() {
 
     const services = [
+        {
+            title: "Pooja room",
+            description: "The design should reflect a peaceful ambiance, incorporating elements like traditional wooden mandirs, marble platforms, or wall-mounted units, depending on the available space. Placement according to Vastu Shastra typically in the northeast corner of the home is often considered ideal",
+            icon: <ColorLens fontSize="large" color="primary" />,
+            img: "/Images/Interiors/pooja_room.png",
+        },
         {
             title: "Modular Kitchen Design",
             description: "We specialize in creating modular kitchen designs that are stylish, space-efficient, and tailored to your lifestyle. From layout planning to material selection, we deliver kitchens that blend functionality and aesthetics seamlessly.",
@@ -31,6 +38,12 @@ function page() {
             img: "/Images/Interiors/living_dining_pixabay.jpg",
         },
         {
+            title: "Balcony Designs",
+            description: "Transform your balconies into cozy retreats or stylish social spaces. We offer creative solutions for all sizes, incorporating greenery, lighting, and functional furniture.",
+            icon: <BalconyIcon fontSize="large" color="primary" />,
+            img: "/Images/Interiors/balcony_design_3D.png",
+        },
+        {
             title: "Room Designs",
             description: "Whether it's a bedroom, study, or guest room, we design rooms that reflect your preferences while ensuring maximum comfort, utility, and style.",
             icon: <House fontSize="large" color="primary" />,
@@ -41,12 +54,6 @@ function page() {
             description: "We craft practical and elegant designs for bathrooms, utility areas, and other wet spaces, focusing on waterproofing, material durability, and modern aesthetics.",
             icon: <ShowerIcon fontSize="large" color="primary" />,
             img: "/Images/Interiors/wet_area_design_3D.png",
-        },
-        {
-            title: "Balcony Designs",
-            description: "Transform your balconies into cozy retreats or stylish social spaces. We offer creative solutions for all sizes, incorporating greenery, lighting, and functional furniture.",
-            icon: <BalconyIcon fontSize="large" color="primary" />,
-            img: "/Images/Interiors/balcony_design_3D.png",
         }
     ];
 
@@ -78,7 +85,8 @@ function page() {
         {
             id: 5,
             title: "Transparent Pricing",
-            icon: <AttachMoneyIcon fontSize="small" />,
+            icon: <CurrencyRupeeIcon fontSize="small" />,
+            // <AttachMoneyIcon fontSize="small" />,
             // description: "No hidden fees with detailed cost breakdowns"
         }
     ];
