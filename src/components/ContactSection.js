@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import FormikControl from './formikControls/FormikControl';
 import LoadButton from './formikControls/LoadButton';
 
-function ContactSection({from}) {
+function ContactSection({ from }) {
   const [loading, setLoading] = useState(false);
 
   const initialValues = {
@@ -51,7 +51,7 @@ function ContactSection({from}) {
   }
 
   return (
-    <div className=' my-4'>
+    <div className='my-4' data-aos="fade-up">
       <h1 className='text-center'>
         Contact Us
       </h1>

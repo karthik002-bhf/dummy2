@@ -1,10 +1,10 @@
+'use client';
 import React from 'react';
-import { Box, Avatar } from '@mui/material';
 
 function WhyChooseUs({ features }) {
 
   return (
-    <div>
+    <div className='' data-aos="fade-up">
       <h1 className='text-center my-4'>Why Choose Us?</h1>
       <div className='col-md-12 row mx-0 d-flex justify-content-around'>
         {features?.map((feature) => (

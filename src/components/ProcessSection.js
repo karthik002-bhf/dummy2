@@ -1,10 +1,11 @@
+'use client';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
 function ProcessSection({ steps }) {
 
   return (
-    <div className='py-5'>
+    <div className='py-5' data-aos="fade-up">
       <h1 className='text-center my-4'>Execution Process</h1>
       <div className='text-center mb-4'>A systematic approach to ensure quality at every stage of your project</div>
       <div className='col-12 row mx-0 d-flex justify-content-between'>

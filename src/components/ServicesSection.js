@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Button, Card, CardBody, CardImg, CardText, CardTitle } from 'react-bootstrap';
@@ -5,7 +6,7 @@ import { Button, Card, CardBody, CardImg, CardText, CardTitle } from 'react-boot
 function ServicesSection({ services, service_description }) {
 
   return (
-    <div>
+    <div className='' data-aos="fade-up">
       <div className='d-flex justify-content-center align-items-center'>
         {/* <Button
           variant="secondary"
@@ -21,7 +22,7 @@ function ServicesSection({ services, service_description }) {
         {
           service_description ? service_description : 'Comprehensive solutions tailored to your structural repair and renovation needs.'
         }
-        
+
       </div>
       <div className='d-flex justify-content-center mb-4'>
         {/* <Button
@@ -33,9 +34,9 @@ function ServicesSection({ services, service_description }) {
           Get a Free Consultation
         </Button> */}
       </div>
-      <div className='col-md-12 row mx-0'>
+      <div className='col-md-12 row mx-0' data-aos="fade-up">
         {services?.map((service, index) => (
-          <div className='col-md-4 my-3' key={index}>
+          <div className='col-md-4 my-3' key={index} data-aos="fade-up">
             <Card className='shadow-md' style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
               {/* <CardImg variant="top" src={service?.img} style={{ height: '300px' }} /> */}
               <CardBody className='p-0'>

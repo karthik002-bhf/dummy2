@@ -8,17 +8,18 @@ import PrdCard from './PrdCard'
 const MultiCarousel = dynamic(() => import('../MultiCarousel'), { ssr: false })
 
 function Prd({ data, prdSuggest }) {
+
     return (
-        <div className='px-2'>
+        <div className='px-2' data-aos="fade-up">
             <div className='col-md-12 row mx-0'>
-                <div className='col-md-6'>
+                <div className='col-md-6' data-aos="fade-up">
                     <PrdImgs img_data={data?.prd_imgs ? data?.prd_imgs : data?.prd_img} />
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6' data-aos="fade-up">
                     <PrdDetails data={data} />
                 </div>
             </div>
-            <div className='my-5'>
+            <div className='my-5' data-aos="fade-up">
                 <h5>Suggested Products</h5>
                 {
                     prdSuggest

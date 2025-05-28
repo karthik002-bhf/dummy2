@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'aos/dist/aos.css';
 import Footer from "@/common/Footer";
 import NavWrapper from "@/common/NavWrapper";
 import { AuthProvider } from "./context/AuthContext";

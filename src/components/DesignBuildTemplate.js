@@ -1,16 +1,17 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 
 function DesignBuildTemplate({ data }) {
   return (
-    <div className="container my-5">
-      <header className="text-center mb-5">
+    <div className="container my-5" data-aos="fade-up">
+      <header className="text-center mb-5" data-aos="fade-up">
         <h1 className="display-4 fw-bold text-success">{data?.title}</h1>
         <h2 className="text-muted">{data?.subtitle}</h2>
       </header>
 
       <div className="row mb-5">
-        <div className="col-md-6 my-auto">
+        <div className="col-md-6 my-auto" data-aos="fade-up">
           <div className='shadow-lg rounded-lg my-2 my-md-0 img_div'>
             <Image src={data?.mainImage} alt="Feature Image" fill className='img_css' priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
@@ -22,7 +23,7 @@ function DesignBuildTemplate({ data }) {
             />
           </div> */}
         </div>
-        <div className="col-md-6 my-auto">
+        <div className="col-md-6 my-auto" data-aos="fade-up">
           <div className="card h-100 border-success shadow-lg">
             <div className="card-body">
               <h3 className="card-title text-success">Key Features</h3>

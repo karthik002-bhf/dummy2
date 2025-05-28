@@ -1,10 +1,11 @@
+'use client';
 import React from 'react';
 import { Table } from 'react-bootstrap';
 
 function PricingSection({ pricingData }) {
 
   return (
-    <div className='text-center'>
+    <div className='text-center' data-aos="fade-up">
       <h1>Pricing</h1>
       <div className='mb-4'>Transparent and competitive pricing for all our services</div>
 

@@ -1,4 +1,5 @@
 'use client';
+import Aos from 'aos';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
 import { createContext, useContext, useEffect, useState } from 'react';
@@ -9,6 +10,13 @@ export const AuthProvider = ({ children }) => {
     // const cookies = new Cookies();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const router = useRouter();
+
+    useEffect(() => {
+        Aos.init({
+            duration: 600,
+            once: true,
+        });
+    }, []);
 
     useEffect(() => {
         // const isLoggedIn = document.cookie.includes('auth_token=');

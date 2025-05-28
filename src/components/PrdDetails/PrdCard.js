@@ -13,7 +13,7 @@ function PrdCard({ prd_data, detail_page, catSelected }) {
                             {
                                 item?.products?.map((e, index) => {
                                     return (
-                                        <div key={`prd_item${index}`} className={`${detail_page ? 'col-md-2' : 'col-md-3'} px-0 px-md-2 mb-2`}>
+                                        <div key={`prd_item${index}`} className={`${detail_page ? 'col-md-2' : 'col-md-3'} px-0 px-md-2 mb-2`} data-aos="fade-up">
                                             <div className='card shadow-md h-100 p-3'>
                                                 <Link href={`/Shop/${e?.prd_cat}/${e?.prd_slug}`} className='link'>
                                                     <div className='img_div'>
