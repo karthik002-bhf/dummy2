@@ -216,7 +216,7 @@ export const data = {
     M-15 grade RMC is the go-to choice for general concrete construction where structural reinforcement is not required. It ensures faster execution, quality control, and uniformity across construction sites.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -249,7 +249,7 @@ export const data = {
     M-20 grade RMC provides a balance between cost-effectiveness and strength, making it an ideal choice for both light structural work and general construction where higher compressive strength is not essential.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -282,7 +282,7 @@ export const data = {
     M-25 grade RMC provides excellent performance and reliability for both medium-scale and high-strength applications. Its higher compressive strength makes it suitable for heavy-duty structural requirements, ensuring the longevity and durability of the construction.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -315,7 +315,7 @@ export const data = {
     M-30 grade RMC is a perfect choice for projects where higher strength and durability are required. With excellent performance in reinforced concrete applications, it ensures the integrity and longevity of the structure, even under high loads and adverse conditions.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -348,7 +348,7 @@ export const data = {
     M-35 grade RMC is ideal for projects that demand superior strength and long-term performance. It provides outstanding structural integrity and is well-suited for high-load-bearing applications, making it an essential choice for infrastructure, large buildings, and heavy-duty constructions.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -381,7 +381,7 @@ export const data = {
     M-40 grade RMC is the ideal choice for projects where high strength, durability, and longevity are paramount. It ensures the structural integrity of heavy-duty and high-load-bearing applications, making it a preferred choice for large-scale construction projects.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -414,7 +414,7 @@ export const data = {
     M-50 grade RMC is perfect for projects that demand extraordinary strength and resistance to environmental factors. It provides superior performance for complex and critical structures, ensuring long-term durability and safety even under extreme loads and conditions.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -447,7 +447,7 @@ export const data = {
     M-60 grade RMC is the perfect choice for projects that require the highest strength, durability, and resilience. Its exceptional performance in extreme conditions makes it ideal for high-load-bearing structures, ensuring structural integrity and safety in even the most challenging environments.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -481,7 +481,7 @@ export const data = {
     Lightweight Concrete is an ideal choice for applications where reduced dead load, energy efficiency, and soundproofing are essential. Its versatility in both structural and non-structural applications makes it a popular choice in modern construction, offering both performance and cost-efficiency.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -514,7 +514,7 @@ export const data = {
     Pavement Quality Concrete is the go-to solution for projects requiring superior durability and long-lasting performance under high-stress conditions. Its exceptional strength, resistance to wear, and ability to handle heavy traffic loads make it essential for infrastructure projects where high-quality pavement surfaces are needed.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
@@ -547,7 +547,7 @@ export const data = {
     Dry Lean Concrete is the ideal choice for applications that require a cost-effective, durable, and stable base layer. It helps improve the load distribution and ensures the structural integrity of the upper layers of concrete, making it a fundamental component in construction projects where high strength is not necessary but long-term stability is crucial.
   </p>
 </div>`,
-          "prd_img": '/Images/E-Mart/RMC/RMC.jpg',
+          "prd_img": '/Images/E-Mart/RMC/rmc_mixer.png',
           "prd_price": '',
           "prd_code": ''
         },
